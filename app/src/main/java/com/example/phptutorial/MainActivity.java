@@ -2,8 +2,12 @@ package com.example.phptutorial;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+import android.widget.Toolbar;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,7 +15,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+public class MainActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,5 +32,32 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem item) {
+                if (item.getItemId() == R.id.home) {
+                    // เมื่อเลือก Home
+                    Toast.makeText(MainActivity.this, "Home", Toast.LENGTH_SHORT).show();
+                    return true;
+                } else if (item.getItemId() == R.id.lessons) {
+                    // เมื่อเลือก Search
+                    Toast.makeText(MainActivity.this, "lessons", Toast.LENGTH_SHORT).show();
+                    return true;
+                } else if (item.getItemId() == R.id.exercise) {
+                    // เมื่อเลือก Search
+                    Toast.makeText(MainActivity.this, "exercise", Toast.LENGTH_SHORT).show();
+                    return true;
+                } else if (item.getItemId() == R.id.profile) {
+                    // เมื่อเลือก Profile
+                    Toast.makeText(MainActivity.this, "Profile", Toast.LENGTH_SHORT).show();
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        });
+
     }
 }

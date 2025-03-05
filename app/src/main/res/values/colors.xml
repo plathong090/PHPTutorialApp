@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<!--        &lt;!&ndash; สีของไอคอนเมนู &ndash;&gt;-->
+<!--    <color name="bottom_nav_item_icon_color">#BDBDBD</color> &lt;!&ndash; สีไอคอนที่ไม่ถูกเลือก &ndash;&gt;-->
+<!--    <color name="bottom_nav_item_icon_color_selected">#FF5722</color> &lt;!&ndash; สีไอคอนที่เลือก &ndash;&gt;-->
+
+<!--        &lt;!&ndash; สีข้อความเมนู &ndash;&gt;-->
+<!--    <color name="bottom_nav_item_text_color">#BDBDBD</color> &lt;!&ndash; สีข้อความที่ไม่ถูกเลือก &ndash;&gt;-->
+<!--    <color name="bottom_nav_item_text_color_selected">#FF5722</color> &lt;!&ndash; สีข้อความที่เลือก &ndash;&gt;-->
+
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>
