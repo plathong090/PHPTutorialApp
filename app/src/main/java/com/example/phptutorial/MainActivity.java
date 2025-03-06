@@ -38,19 +38,15 @@ public class MainActivity extends AppCompatActivity{
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {
                 if (item.getItemId() == R.id.home) {
-                    // เมื่อเลือก Home
                     Toast.makeText(MainActivity.this, "Home", Toast.LENGTH_SHORT).show();
                     return true;
                 } else if (item.getItemId() == R.id.lessons) {
-                    // เมื่อเลือก Search
                     Toast.makeText(MainActivity.this, "lessons", Toast.LENGTH_SHORT).show();
                     return true;
                 } else if (item.getItemId() == R.id.exercise) {
-                    // เมื่อเลือก Search
                     Toast.makeText(MainActivity.this, "exercise", Toast.LENGTH_SHORT).show();
                     return true;
                 } else if (item.getItemId() == R.id.profile) {
-                    // เมื่อเลือก Profile
                     Toast.makeText(MainActivity.this, "Profile", Toast.LENGTH_SHORT).show();
                     return true;
                 } else {

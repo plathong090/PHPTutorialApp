@@ -2,20 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/home"
-        android:title="หน้าหลัก"
-        />
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="หน้าหลัก" />
 
     <item
         android:id="@+id/lessons"
-        android:title="บทเรียน"/>
+        android:icon="@android:drawable/ic_input_get"
+        android:title="บทเรียน" />
 
     <item
         android:id="@+id/exercise"
-        android:title="แบบทดสอบ"
-        android:icon="@drawable/exercise"/>
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="แบบทดสอบ" />
 
     <item
         android:id="@+id/profile"
-        android:title="โปรไฟล์"
-        android:icon="@drawable/person"/>
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="โปรไฟล์" />
 </menu>
