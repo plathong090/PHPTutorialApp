@@ -1,111 +1,272 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true">
 
-    <LinearLayout
+    <!-- เริ่มต้น ScrollView เพื่อให้สามารถเลื่อนเนื้อหาได้ -->
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_height="match_parent"
         android:padding="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="8dp">
+            android:orientation="vertical"
+            android:padding="16dp">
 
-            <Button
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ย้อนกลับ"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_marginTop="50dp">
+
+                <Button
+
+                    android:id="@+id/backintro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:text="ย้อนกลับ" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/nextintro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:text="ต่อไป" />
+            </LinearLayout>
+
+            <!-- เนื้อหาหลัก -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                />
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="สิ่งที่ควรรู้เกี่ยวกับ PHP"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
-            <View
-                android:layout_width="0dp"
-                android:layout_height="48dp"
-                android:layout_weight="1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="การสื่อสารผ่านอินเทอร์เน็ตและเว็บไซต์ (WWW) มีความสำคัญมาก ในปัจจุบัน  โดยเว็บไซต์ใช้ในการเผยแพร่ข้อมูลและทำธุรกิจ การใช้ Server Side Script เช่น PHP ทำให้เว็บไซต์ทำงานได้อย่างมี ประสิทธิภาพและตอบสนองผู้ใช้งานได้ดี"
+                android:textSize="16sp" />
 
-            <Button
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="การทำงานของ World Wide Web (WWW)"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:paddingTop="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/intro1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="          World Wide Web (WWW) เป็นบริการหนึ่งในอินเทอร์เน็ตที่แสดง ข้อมูลในรูปแบบเว็บเพจที่เชื่อมโยงกันเหมือนใยแมงมุม ซึ่งเว็บเพจ เหล่านี้สามารถเก็บไว้ในเครื่องคอมพิวเตอร์เครื่องเดียวกันหรือในเครื่องที่อยู่ไกลก็ได้"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ต่อไป"
-                android:fontFamily="@font/font" />
-        </LinearLayout>
+                android:layout_gravity="center"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำศัพท์ที่ควรรู้"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="สิ่งที่ต้องรู้เกี่ยวกับ PHP"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:paddingTop="10dp"
-            android:fontFamily="@font/font"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="การสื่อสารผ่านอินเทอร์เน็ตและเว็บไซต์ (WWW) มีความสำคัญมาก ในปัจจุบัน  โดยเว็บไซต์ใช้ในการเผยแพร่ข้อมูลและทำธุรกิจ การใช้ Server Side Script เช่น PHP ทำให้เว็บไซต์ทำงานได้อย่างมี ประสิทธิภาพและตอบสนองผู้ใช้งานได้ดี"
-            android:textSize="16sp"
-            android:paddingTop="10dp"
-            android:fontFamily="@font/font"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="การทำงานของ World Wide Web (WWW)"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:paddingTop="10dp"
-            android:fontFamily="@font/font"/>
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="101dp"
-            android:paddingTop="10dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/intro1" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="          World Wide Web (WWW) เป็นบริการหนึ่งในอินเทอร์เน็ตที่แสดง ข้อมูลในรูปแบบเว็บเพจที่เชื่อมโยงกันเหมือนใยแมงมุม ซึ่งเว็บเพจ เหล่านี้สามารถเก็บไว้ในเครื่องคอมพิวเตอร์เครื่องเดียวกันหรือในเครื่องที่อยู่ไกลก็ได้"
-            android:textSize="16sp"
-            android:paddingTop="10dp"
-            android:fontFamily="@font/font"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="คำศัพท์ที่ควรรู้"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:paddingTop="10dp"
-            android:fontFamily="@font/font"/>
-
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:columnCount="2"
-            android:paddingTop="8dp">
-
+            <!--Home page-->
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:text="Home Page\nหน้าหลักของเว็บไซต์..."
-                android:textSize="16sp"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:text="Web Page\nหน้าของเว็บไซต์ที่..."
+                android:fontFamily="@font/font"
+                android:text="Home Page"
                 android:textSize="16sp"
-                android:padding="8dp" />
-        </GridLayout>
-    </LinearLayout>
-</ScrollView>
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="หน้าหลักของ website ที่แสดงข้อมูลหรือเมนูหลัก"
+                android:textSize="14sp"/>
+
+            <!--Web page-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="Web Page"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="หน้าของ website ที่มีเนื้อหาหรือ ข้อมูลต่างๆ เช่น ข้อความ รูปภาพ"
+                android:textSize="14sp"/>
+
+            <!--Website-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="Website"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="กลุ่มของ web page ที่เชื่อมโยงกัน และทำงานร่วมกัน"
+                android:textSize="14sp"/>
+
+            <!--Web Server-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="Web Server"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="โปรแกรมที่ให้บริการ web page และข้อมูลแก่ผู้ใช้ผ่าน internet"
+                android:textSize="14sp"/>
+
+            <!--Web Browser-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="Web Browser"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="โปรแกรมที่ใช้ในการเข้าถึงและดู web page เช่น Google Chrome"
+                android:textSize="14sp"/>
+
+            <!--URL-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="URL"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="ย่อมาจาก Uniform Resource Locator เป็นที่อยู่ของ web page บน internet"
+                android:textSize="14sp"/>
+
+            <!--HTTP-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="HTTP"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="ย่อมาจาก HyperText Transfer Protocol เป็นโปรโตคอลที่ใช้ใน การส่งข้อมูลระหว่าง web browser และ web server"
+                android:textSize="14sp"/>
+
+            <!--Web Master-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="Web Master"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="บุคคลที่ดูแลและจัดการ website"
+                android:textSize="14sp"/>
+
+            <!--Download-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="Download"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="การนำข้อมูลจาก internet ลงมาเก็บไว้ในอุปกรณ์ของผู้ใช้"
+                android:textSize="14sp"/>
+
+            <!--Upload-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font"
+                android:text="Upload"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:fontFamily="@font/font"
+                android:text="การส่งข้อมูลจากอุปกรณ์ผู้ใช้ไปยัง server หรือ internet"
+                android:textSize="14sp"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_menu" />
+</RelativeLayout>

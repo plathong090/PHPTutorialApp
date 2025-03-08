@@ -32,13 +32,6 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
         listmenu.setAdapter(adapter);
         listmenu.setOnItemClickListener(this);
 
-//        Button backButton = findViewById(R.id.bckButton);
-//        backButton.setOnClickListener(v -> {
-//            Intent intent = new Intent(MenuActivity.this, MainActivity.class);
-//            startActivity(intent);
-//            finish();
-//        });
-
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -68,8 +61,6 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
                 }
             }
         });
-
-
     }
 
     @Override
@@ -78,10 +69,10 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
         Intent intent = null;
 
         if (itemValue.equals("บทนำ")) {
-            intent = new Intent(MenuActivity.this, IntroActivity.class); // หน้า IntroActivity
-        } /* else if (itemValue.equals("การติดตั้ง PHP")) {
-            intent = new Intent(MenuActivity.this, InstallPHPActivity.class); // หน้า InstallPHPActivity
-        } else if (itemValue.equals("Syntax PHP")) {
+            intent = new Intent(MenuActivity.this, IntroActivity.class);
+        } else if (itemValue.equals("การติดตั้ง PHP")) {
+            intent = new Intent(MenuActivity.this, InstallActivity.class); // หน้า InstallPHPActivity
+        }/*  else if (itemValue.equals("Syntax PHP")) {
             intent = new Intent(MenuActivity.this, SyntaxPHPActivity.class); // หน้า SyntaxPHPActivity
         } else if (itemValue.equals("การ comment")) {
             intent = new Intent(MenuActivity.this, CommentActivity.class); // หน้า CommentActivity
@@ -128,7 +119,4 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
             Toast.makeText(MenuActivity.this, "ไม่พบหน้าที่เลือก", Toast.LENGTH_SHORT).show();
         }
     }
-
-
-
 }
