@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true"
-    tools:context=".InstallActivity">
+    tools:context=".SyntaxActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -26,7 +26,7 @@
                 android:layout_marginTop="50dp">
 
                 <Button
-                    android:id="@+id/backinstall"
+                    android:id="@+id/backsyntax"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/font"
@@ -38,7 +38,7 @@
                     android:layout_weight="1" />
 
                 <Button
-                    android:id="@+id/nextinstall"
+                    android:id="@+id/nextsyntax"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/font"
@@ -51,7 +51,7 @@
                 android:fontFamily="@font/font"
                 android:gravity="center"
                 android:paddingTop="10dp"
-                android:text="วิธีการติดตั้ง"
+                android:text="ไวยากรณ์พื้นฐาน"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -60,8 +60,45 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text=""
+                android:text="ใน PHP สามารถเขียนโค้ด PHP ได้ในแท็ก HTML แต่จะต้องเริ่มต้นด้วยเครื่องหมาย &lt;?php และจบด้วย ?&gt;"
                 android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/syntax1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="left"
+                android:text="ตัวอย่าง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/syntax2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="left"
+                android:text="ผลลัพธ์"
+                android:paddingTop="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/syntax3" />
 
         </LinearLayout>
     </ScrollView>

@@ -6,7 +6,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true">
 
-    <!-- เริ่มต้น ScrollView เพื่อให้สามารถเลื่อนเนื้อหาได้ -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -257,8 +256,6 @@
                 android:fontFamily="@font/font"
                 android:text="การส่งข้อมูลจากอุปกรณ์ผู้ใช้ไปยัง server หรือ internet"
                 android:textSize="14sp"/>
-
-
 
         </LinearLayout>
     </ScrollView>

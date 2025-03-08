@@ -44,7 +44,7 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
                     startActivity(intent);
                     return true;
 //                } else if (item.getItemId() == R.id.exercise) {
-//                    intent = new Intent(MainActivity.this, ExerciseActivity.class);
+//                    intent = new Intent(IntroActivity.this, ExerciseActivity.class);
 //                    startActivity(intent);
 //                    return true;
                 } else if (item.getItemId() == R.id.profile) {
@@ -60,7 +60,6 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View view) {
-
         if (view.getId() == R.id.backintro) {
             Intent back = new Intent(IntroActivity.this, MenuActivity.class);
             startActivity(back);

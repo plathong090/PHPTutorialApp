@@ -14,19 +14,18 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class InstallActivity extends AppCompatActivity implements View.OnClickListener {
-    Button backinstall, nextinstall;
-
+public class SyntaxActivity extends AppCompatActivity implements View.OnClickListener{
+    Button backsyntax, nextsyntax;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_install);
+        setContentView(R.layout.activity_syntax);
 
-        backinstall = findViewById(R.id.backinstall);
-        nextinstall = findViewById(R.id.nextinstall);
-        backinstall.setOnClickListener(this);
-        nextinstall.setOnClickListener(this);
+        backsyntax = findViewById(R.id.backsyntax);
+        nextsyntax = findViewById(R.id.nextsyntax);
+        backsyntax.setOnClickListener(this);
+        nextsyntax.setOnClickListener(this);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -35,19 +34,19 @@ public class InstallActivity extends AppCompatActivity implements View.OnClickLi
                 Intent intent = null;
 
                 if (item.getItemId() == R.id.home) {
-                    intent = new Intent(InstallActivity.this, MainActivity.class);
+                    intent = new Intent(SyntaxActivity.this, MainActivity.class);
                     startActivity(intent);
                     return true;
                 } else if (item.getItemId() == R.id.lessons) {
-                    intent = new Intent(InstallActivity.this, MenuActivity.class);
+                    intent = new Intent(SyntaxActivity.this, MenuActivity.class);
                     startActivity(intent);
                     return true;
 //                } else if (item.getItemId() == R.id.exercise) {
-//                    intent = new Intent(InstallActivity.this, ExerciseActivity.class);
+//                    intent = new Intent(SyntaxActivity.this, ExerciseActivity.class);
 //                    startActivity(intent);
 //                    return true;
                 } else if (item.getItemId() == R.id.profile) {
-                    intent = new Intent(InstallActivity.this, ProfileActivity.class);
+                    intent = new Intent(SyntaxActivity.this, ProfileActivity.class);
                     startActivity(intent);
                     return true;
                 } else {
@@ -59,11 +58,11 @@ public class InstallActivity extends AppCompatActivity implements View.OnClickLi
 
     @Override
     public void onClick(View view) {
-        if (view.getId() == R.id.backinstall) {
-            Intent back = new Intent(InstallActivity.this, IntroActivity.class);
+        if (view.getId() == R.id.backsyntax) {
+            Intent back = new Intent(SyntaxActivity.this, InstallActivity.class);
             startActivity(back);
-        } else if (view.getId() == R.id.nextinstall) {
-            Intent next = new Intent(InstallActivity.this, SyntaxActivity.class);
+        } else if (view.getId() == R.id.nextsyntax) {
+            Intent next = new Intent(SyntaxActivity.this, CommentsActivity.class);
             startActivity(next);
         }
     }
