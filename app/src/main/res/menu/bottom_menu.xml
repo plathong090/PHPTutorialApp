@@ -3,20 +3,24 @@
     <item
         android:id="@+id/home"
         android:icon="@android:drawable/ic_menu_agenda"
-        android:title="หน้าหลัก" />
+        android:title="หน้าหลัก"
+        android:fontFamily="@font/font"/>
 
     <item
         android:id="@+id/lessons"
         android:icon="@android:drawable/ic_input_get"
-        android:title="บทเรียน" />
+        android:title="บทเรียน"
+        android:fontFamily="@font/font"/>
 
     <item
         android:id="@+id/exercise"
         android:icon="@android:drawable/ic_menu_edit"
-        android:title="แบบทดสอบ" />
+        android:title="แบบทดสอบ"
+        android:fontFamily="@font/font"/>
 
     <item
         android:id="@+id/profile"
         android:icon="@android:drawable/ic_menu_myplaces"
-        android:title="โปรไฟล์" />
+        android:title="โปรไฟล์"
+        android:fontFamily="@font/font"/>
 </menu>

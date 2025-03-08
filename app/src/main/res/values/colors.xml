@@ -8,6 +8,32 @@
 <!--    <color name="bottom_nav_item_text_color">#BDBDBD</color> &lt;!&ndash; สีข้อความที่ไม่ถูกเลือก &ndash;&gt;-->
 <!--    <color name="bottom_nav_item_text_color_selected">#FF5722</color> &lt;!&ndash; สีข้อความที่เลือก &ndash;&gt;-->
 
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+        <!-- สีพื้นฐาน -->
+        <color name="black">#000000</color>
+        <color name="white">#FFFFFF</color>
+        <color name="gray">#808080</color>
+
+        <!-- สีหลักของแอป (Primary Colors) -->
+        <color name="primary">#6200EE</color>
+        <color name="primaryDark">#3700B3</color>
+        <color name="primaryLight">#BB86FC</color>
+
+        <!-- สีรอง (Secondary Colors) -->
+        <color name="secondary">#03DAC5</color>
+        <color name="secondaryDark">#018786</color>
+        <color name="secondaryLight">#66FFF9</color>
+
+        <!-- สีแจ้งเตือน (Error, Warning, Success) -->
+        <color name="error">#B00020</color>
+        <color name="warning">#FFA000</color>
+        <color name="success">#388E3C</color>
+
+        <!-- สีพื้นหลัง และ สีข้อความ -->
+        <color name="background">#F5F5F5</color>
+        <color name="textPrimary">#212121</color>
+        <color name="textSecondary">#757575</color>
+
+        <!-- สีปุ่ม -->
+        <color name="buttonBackground">#FF5722</color>
+
 </resources>

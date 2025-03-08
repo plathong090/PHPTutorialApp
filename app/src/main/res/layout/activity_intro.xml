@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ย้อนกลับ"
+                android:fontFamily="@font/font"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ต่อไป"
+                android:fontFamily="@font/font" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="สิ่งที่ต้องรู้เกี่ยวกับ PHP"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:fontFamily="@font/font"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="การสื่อสารผ่านอินเทอร์เน็ตและเว็บไซต์ (WWW) มีความสำคัญมาก ในปัจจุบัน  โดยเว็บไซต์ใช้ในการเผยแพร่ข้อมูลและทำธุรกิจ การใช้ Server Side Script เช่น PHP ทำให้เว็บไซต์ทำงานได้อย่างมี ประสิทธิภาพและตอบสนองผู้ใช้งานได้ดี"
+            android:textSize="16sp"
+            android:paddingTop="10dp"
+            android:fontFamily="@font/font"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="การทำงานของ World Wide Web (WWW)"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:fontFamily="@font/font"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/intro1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="          World Wide Web (WWW) เป็นบริการหนึ่งในอินเทอร์เน็ตที่แสดง ข้อมูลในรูปแบบเว็บเพจที่เชื่อมโยงกันเหมือนใยแมงมุม ซึ่งเว็บเพจ เหล่านี้สามารถเก็บไว้ในเครื่องคอมพิวเตอร์เครื่องเดียวกันหรือในเครื่องที่อยู่ไกลก็ได้"
+            android:textSize="16sp"
+            android:paddingTop="10dp"
+            android:fontFamily="@font/font"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="คำศัพท์ที่ควรรู้"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:fontFamily="@font/font"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Home Page\nหน้าหลักของเว็บไซต์..."
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Web Page\nหน้าของเว็บไซต์ที่..."
+                android:textSize="16sp"
+                android:padding="8dp" />
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

@@ -37,23 +37,30 @@ public class MainActivity extends AppCompatActivity{
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {
+                Intent intent = null;
+
                 if (item.getItemId() == R.id.home) {
-                    Toast.makeText(MainActivity.this, "Home", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(MainActivity.this, MainActivity.class);
+                    startActivity(intent);
                     return true;
                 } else if (item.getItemId() == R.id.lessons) {
-                    Toast.makeText(MainActivity.this, "lessons", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(MainActivity.this, MenuActivity.class);
+                    startActivity(intent);
                     return true;
-                } else if (item.getItemId() == R.id.exercise) {
-                    Toast.makeText(MainActivity.this, "exercise", Toast.LENGTH_SHORT).show();
-                    return true;
+//                } else if (item.getItemId() == R.id.exercise) {
+//                    // ถ้าเลือก Exercise, ไปที่ ExerciseActivity
+//                    intent = new Intent(MainActivity.this, ExerciseActivity.class);
+//                    startActivity(intent);
+//                    return true;
                 } else if (item.getItemId() == R.id.profile) {
-                    Toast.makeText(MainActivity.this, "Profile", Toast.LENGTH_SHORT).show();
+                    // ถ้าเลือก Profile, ไปที่ ProfileActivity
+                    intent = new Intent(MainActivity.this, ProfileActivity.class);
+                    startActivity(intent);
                     return true;
                 } else {
                     return false;
                 }
             }
         });
-
     }
 }
