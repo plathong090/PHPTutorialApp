@@ -25,7 +25,6 @@
                 android:layout_marginTop="50dp">
 
                 <Button
-
                     android:id="@+id/backintro"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -45,7 +44,6 @@
                     android:text="ต่อไป" />
             </LinearLayout>
 
-            <!-- เนื้อหาหลัก -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -256,7 +254,6 @@
                 android:fontFamily="@font/font"
                 android:text="การส่งข้อมูลจากอุปกรณ์ผู้ใช้ไปยัง server หรือ internet"
                 android:textSize="14sp"/>
-
         </LinearLayout>
     </ScrollView>
 

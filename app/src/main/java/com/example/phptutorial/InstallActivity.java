@@ -42,10 +42,10 @@ public class InstallActivity extends AppCompatActivity implements View.OnClickLi
                     intent = new Intent(InstallActivity.this, MenuActivity.class);
                     startActivity(intent);
                     return true;
-//                } else if (item.getItemId() == R.id.exercise) {
-//                    intent = new Intent(InstallActivity.this, ExerciseActivity.class);
-//                    startActivity(intent);
-//                    return true;
+                } else if (item.getItemId() == R.id.exercise) {
+                    intent = new Intent(InstallActivity.this, ExerciseActivity.class);
+                    startActivity(intent);
+                    return true;
                 } else if (item.getItemId() == R.id.profile) {
                     intent = new Intent(InstallActivity.this, ProfileActivity.class);
                     startActivity(intent);

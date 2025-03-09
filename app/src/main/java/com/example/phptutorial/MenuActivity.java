@@ -46,13 +46,12 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
                     intent = new Intent(MenuActivity.this, MenuActivity.class);
                     startActivity(intent);
                     return true;
-//                } else if (item.getItemId() == R.id.exercise) {
-//                    // ถ้าเลือก Exercise, ไปที่ ExerciseActivity
-//                    intent = new Intent(MenuActivity.this, ExerciseActivity.class);
-//                    startActivity(intent);
-//                    return true;
+                } else if (item.getItemId() == R.id.exercise) {
+                    // ถ้าเลือก Exercise, ไปที่ ExerciseActivity
+                    intent = new Intent(MenuActivity.this, ExerciseActivity.class);
+                    startActivity(intent);
+                    return true;
                 } else if (item.getItemId() == R.id.profile) {
-                    // ถ้าเลือก Profile, ไปที่ ProfileActivity
                     intent = new Intent(MenuActivity.this, ProfileActivity.class);
                     startActivity(intent);
                     return true;

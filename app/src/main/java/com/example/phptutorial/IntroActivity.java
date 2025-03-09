@@ -8,9 +8,6 @@ import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -43,10 +40,10 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
                     intent = new Intent(IntroActivity.this, MenuActivity.class);
                     startActivity(intent);
                     return true;
-//                } else if (item.getItemId() == R.id.exercise) {
-//                    intent = new Intent(IntroActivity.this, ExerciseActivity.class);
-//                    startActivity(intent);
-//                    return true;
+                } else if (item.getItemId() == R.id.exercise) {
+                    intent = new Intent(IntroActivity.this, ExerciseActivity.class);
+                    startActivity(intent);
+                    return true;
                 } else if (item.getItemId() == R.id.profile) {
                     intent = new Intent(IntroActivity.this, ProfileActivity.class);
                     startActivity(intent);
