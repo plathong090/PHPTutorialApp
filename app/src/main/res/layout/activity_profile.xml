@@ -11,7 +11,11 @@
         android:id="@+id/imageProfile"
         android:layout_width="100dp"
         android:layout_height="100dp"
+<<<<<<< HEAD
         android:layout_marginTop="184dp"
+=======
+        android:layout_marginTop="220dp"
+>>>>>>> feature/menu
         android:src="@drawable/profile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

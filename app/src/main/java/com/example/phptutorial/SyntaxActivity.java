@@ -32,7 +32,6 @@ public class SyntaxActivity extends AppCompatActivity implements View.OnClickLis
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {
                 Intent intent = null;
-
                 if (item.getItemId() == R.id.home) {
                     intent = new Intent(SyntaxActivity.this, MainActivity.class);
                     startActivity(intent);
