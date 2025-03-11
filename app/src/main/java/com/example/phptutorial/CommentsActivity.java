@@ -20,8 +20,8 @@ public class CommentsActivity extends AppCompatActivity implements View.OnClickL
         setContentView(R.layout.activity_comments);
 
         backcomment = findViewById(R.id.backcomment);
-        backcomment = findViewById(R.id.nextcomment);
-        nextcomment.setOnClickListener(this);
+        nextcomment = findViewById(R.id.nextcomment);
+        backcomment.setOnClickListener(this);
         nextcomment.setOnClickListener(this);
     }
 

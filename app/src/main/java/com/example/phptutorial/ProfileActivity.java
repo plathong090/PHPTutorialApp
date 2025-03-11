@@ -35,6 +35,6 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         } else if (view.getId() == R.id.loginProfile) {
             Intent lgPage = new Intent(ProfileActivity.this, LoginProfileActivity.class);
             startActivity(lgPage);
-        };
+        }
     }
 }

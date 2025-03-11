@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    tools:context=".CommentsActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -83,6 +84,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
+                android:paddingTop="10dp"
                 android:text="Single-line Comment"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -97,7 +99,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:text="Multi-line Commente"
+                android:text="Multi-line Comment"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:paddingTop="10dp"/>

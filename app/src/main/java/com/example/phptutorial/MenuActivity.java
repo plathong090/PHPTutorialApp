@@ -74,11 +74,11 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
             intent = new Intent(MenuActivity.this, SyntaxActivity.class);
         } else if (itemValue.equals("การเขียน Comment")) {
             intent = new Intent(MenuActivity.this, CommentsActivity.class);
-        } /* else if (itemValue.equals("การตั้งตัวแปร Variables")) {
-            intent = new Intent(MenuActivity.this, VariablesActivity.class); // หน้า VariablesActivity
+        } else if (itemValue.equals("การตั้งตัวแปร Variables")) {
+            intent = new Intent(MenuActivity.this, VariablesActivity.class);
         } else if (itemValue.equals("คำสั่ง echo และ print")) {
-            intent = new Intent(MenuActivity.this, EchoPrintActivity.class); // หน้า EchoPrintActivity
-        } else if (itemValue.equals("ประเภทของข้อมูล")) {
+            intent = new Intent(MenuActivity.this, EchoPrintActivity.class);
+        } /*else if (itemValue.equals("ประเภทของข้อมูล")) {
             intent = new Intent(MenuActivity.this, DataTypesActivity.class); // หน้า DataTypesActivity
         } else if (itemValue.equals("Strings")) {
             intent = new Intent(MenuActivity.this, StringsActivity.class); // หน้า StringsActivity

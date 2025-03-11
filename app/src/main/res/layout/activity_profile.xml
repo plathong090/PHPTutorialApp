@@ -11,11 +11,7 @@
         android:id="@+id/imageProfile"
         android:layout_width="100dp"
         android:layout_height="100dp"
-<<<<<<< HEAD
         android:layout_marginTop="184dp"
-=======
-        android:layout_marginTop="220dp"
->>>>>>> feature/menu
         android:src="@drawable/profile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -73,7 +69,7 @@
         android:layout_marginTop="10dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:fontFamily="@font/font"
-        android:text="สมัครสมาชิก"
+        android:text="เข้าสู่ระบบ"
         android:textColor="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
