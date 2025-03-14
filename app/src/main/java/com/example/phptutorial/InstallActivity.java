@@ -5,13 +5,8 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class InstallActivity extends AppCompatActivity implements View.OnClickListener {
@@ -42,10 +37,10 @@ public class InstallActivity extends AppCompatActivity implements View.OnClickLi
                     intent = new Intent(InstallActivity.this, MenuActivity.class);
                     startActivity(intent);
                     return true;
-//                } else if (item.getItemId() == R.id.exercise) {
-//                    intent = new Intent(InstallActivity.this, ExerciseActivity.class);
-//                    startActivity(intent);
-//                    return true;
+                } else if (item.getItemId() == R.id.exercise) {
+                    intent = new Intent(InstallActivity.this, ExerciseActivity.class);
+                    startActivity(intent);
+                    return true;
                 } else if (item.getItemId() == R.id.profile) {
                     intent = new Intent(InstallActivity.this, ProfileActivity.class);
                     startActivity(intent);

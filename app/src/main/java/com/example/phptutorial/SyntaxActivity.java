@@ -32,7 +32,6 @@ public class SyntaxActivity extends AppCompatActivity implements View.OnClickLis
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {
                 Intent intent = null;
-
                 if (item.getItemId() == R.id.home) {
                     intent = new Intent(SyntaxActivity.this, MainActivity.class);
                     startActivity(intent);
@@ -41,10 +40,10 @@ public class SyntaxActivity extends AppCompatActivity implements View.OnClickLis
                     intent = new Intent(SyntaxActivity.this, MenuActivity.class);
                     startActivity(intent);
                     return true;
-//                } else if (item.getItemId() == R.id.exercise) {
-//                    intent = new Intent(SyntaxActivity.this, ExerciseActivity.class);
-//                    startActivity(intent);
-//                    return true;
+                } else if (item.getItemId() == R.id.exercise) {
+                    intent = new Intent(SyntaxActivity.this, ExerciseActivity.class);
+                    startActivity(intent);
+                    return true;
                 } else if (item.getItemId() == R.id.profile) {
                     intent = new Intent(SyntaxActivity.this, ProfileActivity.class);
                     startActivity(intent);

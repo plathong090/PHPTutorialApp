@@ -17,7 +17,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class MenuActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
     ListView listmenu;
     String[] itemsmenu = {
-            "บทนำ" , "การติดตั้ง PHP" , "Syntax PHP" , "การ comment" , "การตั้งตัวแปร Variables" ,
+            "บทนำ" , "การติดตั้ง" , "ไวยากรณ์" , "การเขียน Comment" , "การตั้งตัวแปร Variables" ,
             "คำสั่ง echo และ print" , "ประเภทของข้อมูล" , "Strings" , "Numbers" , "Casting" ,
             "ตัวแปรคณิตศาสตร์" , "ค่าคงที่" , "ค่าคงที่ที่กำหนดไว้ล่วงหน้า" , "ตัวดำเนินการ" , "if-else" ,
             "Switch" , "Loop" , "ฟังก์ชัน" , "อาเรย์" , "ตัวแปรแบบ Globals" , "Regular Expressions",""};
@@ -46,13 +46,11 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
                     intent = new Intent(MenuActivity.this, MenuActivity.class);
                     startActivity(intent);
                     return true;
-//                } else if (item.getItemId() == R.id.exercise) {
-//                    // ถ้าเลือก Exercise, ไปที่ ExerciseActivity
-//                    intent = new Intent(MenuActivity.this, ExerciseActivity.class);
-//                    startActivity(intent);
-//                    return true;
+                } else if (item.getItemId() == R.id.exercise) {
+                    intent = new Intent(MenuActivity.this, ExerciseActivity.class);
+                    startActivity(intent);
+                    return true;
                 } else if (item.getItemId() == R.id.profile) {
-                    // ถ้าเลือก Profile, ไปที่ ProfileActivity
                     intent = new Intent(MenuActivity.this, ProfileActivity.class);
                     startActivity(intent);
                     return true;
@@ -70,17 +68,17 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
 
         if (itemValue.equals("บทนำ")) {
             intent = new Intent(MenuActivity.this, IntroActivity.class);
-        } else if (itemValue.equals("การติดตั้ง PHP")) {
-            intent = new Intent(MenuActivity.this, InstallActivity.class); // หน้า InstallPHPActivity
-        }/*  else if (itemValue.equals("Syntax PHP")) {
-            intent = new Intent(MenuActivity.this, SyntaxPHPActivity.class); // หน้า SyntaxPHPActivity
-        } else if (itemValue.equals("การ comment")) {
-            intent = new Intent(MenuActivity.this, CommentActivity.class); // หน้า CommentActivity
+        } else if (itemValue.equals("การติดตั้ง")) {
+            intent = new Intent(MenuActivity.this, InstallActivity.class);
+        } else if (itemValue.equals("ไวยากรณ์")) {
+            intent = new Intent(MenuActivity.this, SyntaxActivity.class);
+        } else if (itemValue.equals("การเขียน Comment")) {
+            intent = new Intent(MenuActivity.this, CommentsActivity.class);
         } else if (itemValue.equals("การตั้งตัวแปร Variables")) {
-            intent = new Intent(MenuActivity.this, VariablesActivity.class); // หน้า VariablesActivity
+            intent = new Intent(MenuActivity.this, VariablesActivity.class);
         } else if (itemValue.equals("คำสั่ง echo และ print")) {
-            intent = new Intent(MenuActivity.this, EchoPrintActivity.class); // หน้า EchoPrintActivity
-        } else if (itemValue.equals("ประเภทของข้อมูล")) {
+            intent = new Intent(MenuActivity.this, EchoPrintActivity.class);
+        } /*else if (itemValue.equals("ประเภทของข้อมูล")) {
             intent = new Intent(MenuActivity.this, DataTypesActivity.class); // หน้า DataTypesActivity
         } else if (itemValue.equals("Strings")) {
             intent = new Intent(MenuActivity.this, StringsActivity.class); // หน้า StringsActivity
@@ -115,7 +113,6 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
         if (intent != null) {
             startActivity(intent);
         } else {
-            //ถ้าเมนูที่กดไม่มี
             Toast.makeText(MenuActivity.this, "ไม่พบหน้าที่เลือก", Toast.LENGTH_SHORT).show();
         }
     }
