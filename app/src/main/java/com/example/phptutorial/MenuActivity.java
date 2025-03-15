@@ -18,7 +18,7 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
     ListView listmenu;
     String[] itemsmenu = {
             "สิ่งที่ควรรู้เกี่ยวกับ PHP" , "การติดตั้ง" , "ไวยากรณ์" , "การเขียน Comment" , "การตั้งตัวแปร Variables" ,
-            "คำสั่ง echo และ print" , "ประเภทของข้อมูล" , "Strings" , "Numbers" , "Casting" ,
+            "คำสั่ง echo และ print" , "ประเภทของข้อมูล" , "Strings" , "Numbers" , "การเปลี่ยนแปลงประเภทข้อมูล" ,
             "ตัวแปรคณิตศาสตร์" , "ค่าคงที่" , "ค่าคงที่ที่กำหนดไว้ล่วงหน้า" , "ตัวดำเนินการ" , "if-else" ,
             "Switch" , "Loop" , "ฟังก์ชัน" , "อาเรย์" , "ตัวแปรแบบ Globals" , "Regular Expressions",""};
 
@@ -84,7 +84,7 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
             intent = new Intent(MenuActivity.this, StringsActivity.class); // หน้า StringsActivity
         } else if (itemValue.equals("Numbers")) {
             intent = new Intent(MenuActivity.this, NumbersActivity.class); // หน้า NumbersActivity
-        } else if (itemValue.equals("Casting")) {
+        } else if (itemValue.equals("การเปลี่ยนแปลงประเภทข้อมูล")) {
             intent = new Intent(MenuActivity.this, CastingActivity.class); // หน้า CastingActivity
         } else if (itemValue.equals("ตัวแปรคณิตศาสตร์")) {
             intent = new Intent(MenuActivity.this, MathVariablesActivity.class); // หน้า MathVariablesActivity

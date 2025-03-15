@@ -26,7 +26,7 @@
                 android:layout_marginTop="50dp">
 
                 <Button
-                    android:id="@+id/backsyntax"
+                    android:id="@+id/backarrays"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/font"
@@ -38,7 +38,7 @@
                     android:layout_weight="1" />
 
                 <Button
-                    android:id="@+id/nextsyntax"
+                    android:id="@+id/nextarrays"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/font"
@@ -51,17 +51,17 @@
                 android:fontFamily="@font/font"
                 android:gravity="center"
                 android:paddingTop="10dp"
-                android:text="PHP Arrays"
+                android:text="การใช้อาเรย์"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="อาร์เรย์จะจัดเก็บค่าต่างๆ ไว้ในตัวแปรตัวเดียว:"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                android:text="      อาร์เรย์ เป็นตัวแปรพิเศษที่สามารถเก็บค่าได้หลายค่าภายใต้ชื่อเดียว และสามารถเข้าถึงค่าต่างๆได้โดยอ้างอิงชื่อ"
+                android:textSize="16sp" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -73,51 +73,26 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="อาร์เรย์คืออะไร?"
-                android:textSize="16sp"
+                android:text="ประเภทของอาร์เรย์"
+                android:textSize="20sp"
                 android:textStyle="bold"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="อาร์เรย์คือตัวแปรพิเศษที่สามารถเก็บค่าได้หลายค่าภายใต้ชื่อเดียว และคุณสามารถเข้าถึงค่าต่างๆ ได้โดยอ้างอิงหมายเลขดัชนีหรือชื่อ"
+                android:text="  1.อาร์เรย์ที่มีตัวเลข"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ประเภทของอาร์เรย์ PHP"
-                android:textSize="16sp"
-                android:textStyle="bold"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ใน PHP มีอาร์เรย์สามประเภท:"
+                android:text="  2.อาร์เรย์ที่มีชื่อ"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="  1.อาร์เรย์ที่มีดัชนี - อาร์เรย์ที่มีดัชนีตัวเลข"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="  2.อาร์เรย์แบบเชื่อมโยง - อาร์เรย์ที่มีคีย์ที่มีชื่อ"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="  3.อาร์เรย์หลายมิติ - อาร์เรย์ที่ประกอบด้วยอาร์เรย์หนึ่งรายการหรือมากกว่า"
+                android:text="  3.อาร์เรย์หลายมิติ"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
@@ -125,71 +100,49 @@
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
                 android:text="การทำงานกับอาร์เรย์"
-                android:textSize="16sp" />
+                android:textSize="20sp"
+                android:textStyle="bold"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
                 android:text="  1.สร้างอาร์เรย์"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
                 android:text="  2.การเข้าถึงอาร์เรย์"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
                 android:text="  3.อัปเดตอาร์เรย์"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
                 android:text="  4.เพิ่มรายการอาร์เรย์"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
                 android:text="  5.ลบรายการอาร์เรย์"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="  6.การเรียงลำดับอาร์เรย์"
-                android:textSize="16sp" />
+                android:text="  6.การเรียงลำดับอาร์เรย์"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="รายการอาร์เรย์"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="  รายการอาร์เรย์สามารถเป็นชนิดข้อมูลใดก็ได้"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="  สตริงและตัวเลข (int, float) ที่พบมากที่สุดคือสตริงและตัวเลข แต่รายการอาร์เรย์ยังสามารถเป็นอ็อบเจ็กต์ ฟังก์ชัน หรือแม้แต่เป็นอาร์เรย์ได้อีกด้วย
-
-คุณสามารถมีประเภทข้อมูลที่แตกต่างกันในอาร์เรย์เดียวกันได้"
+                android:text="      อาร์เรย์สามารถเป็นชนิดข้อมูลใดก็ได้พบมากที่สุด คือ string และ number แต่์ยังสามารถเป็น object function หรือ array ได้อีกด้วย"
                 android:textSize="16sp" />
             <ImageView
                 android:layout_width="match_parent"
@@ -202,14 +155,14 @@
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
                 android:text="ฟังก์ชันอาร์เรย์"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:textStyle="bold"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="จุดแข็งที่แท้จริงของอาร์เรย์ PHP คือฟังก์ชันอาร์เรย์ในตัว เช่นcount() ฟังก์ชันสำหรับการนับรายการในอาร์เรย์:"
+                android:text="      จุดแข็งที่แท้จริงของอาร์เรย์ใน PHP คือฟังก์ชันอาร์เรย์ในตัว เช่น count() ฟังก์ชันสำหรับการนับรายการในอาร์เรย์"
                 android:textSize="16sp" />
             <ImageView
                 android:layout_width="match_parent"
@@ -221,17 +174,15 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="อาร์เรย์ดัชนี"
-                android:textSize="16sp"
+                android:text="อาร์เรย์ที่มีตัวเลข"
+                android:textSize="20sp"
                 android:textStyle="bold"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="ในอาร์เรย์ที่มีดัชนี แต่ละรายการจะมีหมายเลขดัชนี
-
-โดยค่าเริ่มต้น รายการแรกมีดัชนีเป็น 0 รายการที่สองมีรายการเป็น 1 เป็นต้น"
+                android:text="ในอาร์เรย์ที่มีตัวเลข แต่ละรายการจะมีค่าเริ่มต้นรายการแรกมีเป็น 0 รายการที่สองมีรายการเป็น 1 เป็นต้น"
                 android:textSize="16sp" />
 
             <ImageView
@@ -239,21 +190,12 @@
                 android:layout_height="138dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/a4" />
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="การเข้าถึงอาร์เรย์ที่สร้างดัชนี"
-                android:textSize="16sp"
-                android:textStyle="bold"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="หากต้องการเข้าถึงรายการอาร์เรย์ คุณสามารถดูหมายเลขดัชนีได้"
+                android:text="      หากต้องการเข้าถึงรายการอาร์เรย์ คุณสามารถดูหมายเลขได้"
                 android:textSize="16sp" />
             <ImageView
                 android:layout_width="match_parent"
@@ -265,36 +207,19 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="การเปลี่ยนแปลงค่า"
-                android:textSize="16sp"
-                android:textStyle="bold"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="หากต้องการเปลี่ยนค่าของรายการอาร์เรย์ ให้ใช้หมายเลขดัชนี:"
+                android:text="หากต้องการเปลี่ยนค่าของรายการอาร์เรย์ให้ใช้หมายเลข"
                 android:textSize="16sp" />
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="138dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/a6" />
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="วนซ้ำผ่านอาร์เรย์ที่มีดัชนี"
-                android:textSize="16sp"
-                android:textStyle="bold"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="หากต้องการวนซ้ำและพิมพ์ค่าทั้งหมดของอาร์เรย์ที่สร้างดัชนี คุณสามารถใช้foreachการวนซ้ำ ดังต่อไปนี้:"
+                android:text="      หากต้องการ loop และพิมพ์ค่าทั้งหมดของอาร์เรย์ที่มีตัวเลข สามารถใช้ foreach การวนซ้ำ ดังต่อไปนี้"
                 android:textSize="16sp" />
             <ImageView
                 android:layout_width="match_parent"
@@ -306,19 +231,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="หมายเลขดัชนี"
-                android:textSize="16sp"
-                android:textStyle="bold"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="คีย์ของอาร์เรย์ที่สร้างดัชนีเป็นตัวเลข โดยค่าเริ่มต้นรายการแรกคือ 0 และรายการที่สองคือ 1 เป็นต้น แต่ก็มีข้อยกเว้นอยู่
-
-รายการใหม่จะได้รับหมายเลขดัชนีถัดไป ซึ่งหมายถึงมีดัชนีสูงกว่าดัชนีที่มีอยู่สูงสุด หนึ่ง รายการ
-
-ดังนั้นหากคุณมีอาร์เรย์เช่นนี้:"
+                android:text="      คีย์ของอาร์เรย์ที่สร้างดัชนีเป็นตัวเลข โดยค่าเริ่มต้นรายการแรกคือ 0 และรายการที่สองคือ 1 เป็นต้น แต่ก็มีข้อยกเว้นอยู่รายการใหม่จะได้รับหมายเลขดัชนีถัดไป ซึ่งหมายถึงมีดัชนีสูงกว่าดัชนีที่มีอยู่สูงสุด หนึ่ง รายการ ดังนั้นหากคุณมีอาร์เรย์เช่นนี้"
                 android:textSize="16sp" />
 
             <ImageView
@@ -331,7 +244,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="และถ้าใช้array_push()ฟังก์ชั่นเพิ่มรายการใหม่ รายการใหม่นั้นจะได้รับดัชนี 3:"
+                android:text="และถ้าใช้ array_push() ฟังก์ชั่นเพิ่มรายการใหม่ รายการใหม่นั้นจะได้รับดัชนี 3"
                 android:textSize="16sp" />
             <ImageView
                 android:layout_width="match_parent"
@@ -343,7 +256,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="แต่ถ้าคุณมีอาร์เรย์ที่มีหมายเลขดัชนีสุ่ม เช่นนี้:"
+                android:text="แต่ถ้าคุณมีอาร์เรย์ที่มีหมายเลขดัชนีสุ่ม เช่นนี้"
                 android:textSize="16sp" />
             <ImageView
                 android:layout_width="match_parent"
@@ -356,7 +269,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="และหากใช้array_push()ฟังก์ชั่นเพิ่มรายการใหม่ หมายเลขดัชนีของรายการใหม่จะเป็นอะไร?"
+                android:text="และหากใช้ array_push() ฟังก์ชั่นเพิ่มรายการใหม่ หมายเลขดัชนีของรายการใหม่จะเป็นอะไร?"
                 android:textSize="16sp" />
             <ImageView
                 android:layout_width="match_parent"

@@ -53,29 +53,12 @@
                 android:text="ตัวแปร"
                 android:textSize="24sp"
                 android:textStyle="bold" />
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="ตัวแปรคือ &quot;ภาชนะ&quot; สำหรับการจัดเก็บข้อมูล"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="center"
-                android:paddingTop="10dp"
-                android:text="การสร้าง (การประกาศ) ตัวแปร PHP"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ใน PHP ตัวแปรจะเริ่มต้นด้วย$เครื่องหมายตามด้วยชื่อของตัวแปร"
+                android:text="      ตัวแปร คือ &quot;ภาชนะ&quot; สำหรับการจัดเก็บข้อมูล ใน PHP ตัวแปรจะเริ่มต้นด้วย $ ตามด้วยชื่อของตัวแปร"
                 android:textSize="16sp" />
 
             <TextView
@@ -83,6 +66,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:gravity="left"
+                android:paddingTop="10dp"
                 android:text="ตัวอย่าง"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -98,50 +82,45 @@
                 android:layout_height="42dp"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="กฎสำหรับตัวแปร PHP:"
+                android:text="กฎสำหรับตัวแปร PHP"
                 android:textSize="16sp"
                 android:textStyle="bold" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="  1.ตัวแปรเริ่มต้นด้วย$เครื่องหมายตามด้วยชื่อของตัวแปร"
+                android:text="          1. ตัวแปรเริ่มต้นด้วย $ ตามด้วยชื่อของตัวแปร"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="  2.ชื่อตัวแปรต้องเริ่มต้นด้วยตัวอักษรหรือเครื่องหมายขีดล่าง"
+                android:text="          2. ชื่อตัวแปรต้องเริ่มต้นด้วยตัวอักษรหรือเครื่องหมาย _"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="  3.ชื่อตัวแปรไม่สามารถเริ่มต้นด้วยตัวเลขได้"
+                android:text="          3. ชื่อตัวแปรไม่สามารถเริ่มต้นด้วยตัวเลขได้"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="  4.ชื่อตัวแปรสามารถมีได้เฉพาะอักขระตัวอักษร-ตัวเลขและเครื่องหมายขีดล่าง (Az, 0-9 และ _) เท่านั้น"
+                android:text="          4. ชื่อตัวแปรสามารถมีได้เฉพาะอักขระ ก-ฮ, A-Z, 0-9 และ _"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="  5.ชื่อตัวแปรต้องคำนึงถึงตัวพิมพ์เล็ก/ใหญ่ ( $ageและ $AGEเป็นตัวแปรสองตัวที่แตกต่างกัน)"
+                android:text="          5. ชื่อตัวแปรต้องคำนึงถึงตัวพิมพ์เล็ก/ใหญ่ ( $ageและ $AGEเป็นตัวแปรสองตัวที่แตกต่างกัน)"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="ตัวแปรเอาต์พุต"
+                android:text="ตัวแปร output"
                 android:textSize="16sp"
                 android:textStyle="bold" />
             <TextView
@@ -149,15 +128,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="  คำสั่ง PHP echoมักใช้เพื่อส่งออกข้อมูลไปยังหน้าจอ"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="  ตัวอย่างต่อไปนี้จะแสดงวิธีการแสดงข้อความและตัวแปร:"
-                android:textSize="16sp" />
+                android:text="  คำสั่ง PHP echoมักใช้เพื่อส่งออกข้อมูลไปยังหน้าจอ"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -184,7 +155,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="  ตัวอย่างต่อไปนี้จะแสดงผลรวมของตัวแปรสองตัว:"
+                android:text="  ตัวอย่างต่อไปนี้จะแสดงผลรวมของตัวแปรสองตัว"
                 android:textSize="16sp" />
 
             <ImageView

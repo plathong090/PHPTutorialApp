@@ -51,7 +51,7 @@
                 android:fontFamily="@font/font"
                 android:gravity="center"
                 android:paddingTop="10dp"
-                android:text="Casting"
+                android:text="การเปลี่ยนแปลงประเภทข้อมูล"
                 android:textSize="24sp"
                 android:textStyle="bold" />
             <TextView
@@ -59,39 +59,61 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="การเปลี่ยนแปลงประเภทข้อมูล"
-                android:textSize="16sp"
-                android:textStyle="bold"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="แคสต์ใน PHP ทำได้ด้วยคำสั่งเหล่านี้:"
+                android:text="      การเปลี่ยนแปลงประเภทข้อมูลสามารถทำได้ด้วยคำสั่งเหล่านี้"
                 android:textSize="16sp"
                 />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="101dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/c1" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:gravity="left"
-                android:layout_marginTop="10sp"
-                android:text="แคสต์เป็นสตริง"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                android:text="          1. (String)  แปลงเป็น string"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="          2. (int)  แปลงเป็น integer"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="          3. (float)  แปลงเป็น float"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="          4. (bool)  แปลงเป็น sboolean"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="          5. (array)  แปลงเป็น array"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="          6. (object)  แปลงเป็น object"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="          7. (unset)  แปลงเป็น null"
+                android:textSize="16sp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="หากต้องการแปลงเป็นสตริง ให้ใช้(string)คำสั่ง:"
+                android:text="หากต้องการเปลี่ยนประเภทข้อมูลเป็นอะไรให้ใช้คำสั่งนั้น"
                 android:textSize="16sp" />
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -105,104 +127,20 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="101dp"
+                android:layout_height="193dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/c2" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:layout_marginTop="10sp"
-                android:text="แปลงเป็นจำนวนเต็ม"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="หากต้องการแปลงเป็นจำนวนเต็ม ให้ใช้(int)คำสั่ง:"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:layout_marginTop="10sp"
-                android:text="ตัวอย่าง"
-                android:textSize="16sp"
-                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="101dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/c3" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:layout_marginTop="10sp"
-                android:text="Cast to Float"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="หากต้องการแปลงเป็น float ให้ใช้(float)คำสั่ง:"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:layout_marginTop="10sp"
-                android:text="ตัวอย่าง"
-                android:textSize="16sp"
-                android:textStyle="bold" />
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="101dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/c4" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:layout_marginTop="10sp"
-                android:text="แคสต์เป็นบูลีน"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="หากต้องการแปลงเป็นค่าบูลีน ให้ใช้(bool)คำสั่ง:"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="NaNใช้สำหรับการคำนวณทางคณิตศาสตร์ที่เป็นไปไม่ได้"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:layout_marginTop="10sp"
-                android:text="ตัวอย่าง"
-                android:textSize="16sp"
-                android:textStyle="bold" />
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="101dp"
@@ -213,34 +151,10 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="ถ้าค่าเป็น 0, NULL, false หรือว่างเปล่า ฟังก์ชัน (bool) จะแปลงค่านั้นเป็น false ไม่เช่นนั้นจะเป็น true
+                android:text="      ถ้าค่าเป็น 0, NULL, false หรือว่างเปล่า ฟังก์ชัน (bool) จะแปลงค่านั้นเป็น false ไม่เช่นนั้นจะเป็น true
 คู่ -1 จะแปลงเป็นจริง"
                 android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:layout_marginTop="10sp"
-                android:text="แคสต์เป็นอาร์เรย์"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="หากต้องการแปลงเป็นอาร์เรย์ ให้ใช้(array)คำสั่ง:"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:layout_marginTop="10sp"
-                android:text="ตัวอย่าง"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="101dp"
@@ -251,11 +165,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="เมื่อแปลงเป็นอาร์เรย์ ประเภทข้อมูลส่วนใหญ่จะแปลงเป็นอาร์เรย์ที่มีดัชนีที่มีองค์ประกอบหนึ่งองค์ประกอบ
-
-ค่า NULL จะถูกแปลงเป็นอ็อบเจ็กต์อาร์เรย์ว่างเปล่า
-
-วัตถุจะถูกแปลงเป็นอาร์เรย์แบบเชื่อมโยงซึ่งชื่อคุณสมบัติจะกลายเป็นคีย์ และค่าคุณสมบัติจะกลายเป็นค่า:"
+                android:text="      เมื่อแปลงเป็นอาร์เรย์ ประเภทข้อมูลส่วนใหญ่จะแปลงเป็นอาร์เรย์ที่มีดัชนีที่มีองค์ประกอบหนึ่งองค์ประกอบค่า NULL จะถูกแปลงเป็นอ็อบเจ็กต์อาร์เรย์ว่างเปล่าวัตถุจะถูกแปลงเป็นอาร์เรย์แบบเชื่อมโยงซึ่งชื่อคุณสมบัติจะกลายเป็นคีย์ และค่าคุณสมบัติจะกลายเป็นค่า"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
@@ -272,32 +182,6 @@
                 android:layout_height="101dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/c7" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:layout_marginTop="10sp"
-                android:text="แคสต์ไปยังวัตถุ"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="หากต้องการแคสต์เป็นวัตถุ ให้ใช้(object)คำสั่ง:"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:layout_marginTop="10sp"
-                android:text="ตัวอย่าง"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="101dp"
@@ -309,32 +193,6 @@
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
                 android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:layout_marginTop="10sp"
-                android:text="แปลงเป็นค่า NULL"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="หากต้องการแปลงเป็นค่า NULL ให้ใช้(unset)คำสั่ง:"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:layout_marginTop="10sp"
-                android:text="ตัวอย่าง"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="101dp"
