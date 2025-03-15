@@ -266,7 +266,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="เมื่อผู้ใช้คลิกปุ่มส่ง ข้อมูลแบบฟอร์มจะถูกส่งไปยังไฟล์ PHP ที่ระบุไว้ใน actionแอตทริบิวต์ของ <form>แท็กในไฟล์แอคชัน เราสามารถใช้$_REQUESTตัวแปรเพื่อรวบรวมค่าของฟิลด์อินพุตได้"
+                android:text="เมื่อผู้ใช้คลิกปุ่มส่ง ข้อมูลแบบฟอร์มจะถูกส่งไปยังไฟล์ PHP ที่ระบุไว้ใน actionแอตทริบิวต์ของ &lt;form&gt; แท็กในไฟล์แอคชัน เราสามารถใช้$_REQUESTตัวแปรเพื่อรวบรวมค่าของฟิลด์อินพุตได้"
                 android:textSize="16sp" />
             <ImageView
                 android:layout_width="match_parent"
@@ -300,7 +300,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="คำขอ GET สามารถทำได้โดยการส่งแบบฟอร์มตามตัวอย่างด้านบน โดยมี การกำหนดmethodแอตทริบิวต์ขององค์ประกอบ HTML เป็น<form>GET"
+                android:text="คำขอ GET สามารถทำได้โดยการส่งแบบฟอร์มตามตัวอย่างด้านบน โดยมี การกำหนดmethodแอตทริบิวต์ขององค์ประกอบ HTML เป็น &lt;form&gt; GET"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
@@ -390,7 +390,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="เมื่อผู้ใช้คลิกปุ่มส่ง ข้อมูลแบบฟอร์มจะถูกส่งไปยังไฟล์ PHP ที่ระบุไว้ใน actionแอตทริบิวต์ของ <form>แท็ก
+                android:text="เมื่อผู้ใช้คลิกปุ่มส่ง ข้อมูลแบบฟอร์มจะถูกส่งไปยังไฟล์ PHP ที่ระบุไว้ใน actionแอตทริบิวต์ของ &lt;form&gt;
 
 ในไฟล์แอคชัน เราสามารถใช้$_POSTตัวแปรเพื่อรวบรวมค่าของฟิลด์อินพุตได้"
                 android:textSize="16sp" />
@@ -618,7 +618,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="เมื่อผู้ใช้คลิกปุ่มส่ง ข้อมูลแบบฟอร์มจะถูกส่งไปยังไฟล์ PHP ที่ระบุไว้ใน actionแอตทริบิวต์ของ <form>แท็ก
+                android:text="เมื่อผู้ใช้คลิกปุ่มส่ง ข้อมูลแบบฟอร์มจะถูกส่งไปยังไฟล์ PHP ที่ระบุไว้ใน actionแอตทริบิวต์ของ &lt;form&gt;
 
 ฟิลด์ฟอร์มจะถูกส่งไปยังไฟล์ PHP พร้อมกับอินพุตของคุณเป็นสตริงแบบสอบถาม:"
                 android:textSize="16sp" />

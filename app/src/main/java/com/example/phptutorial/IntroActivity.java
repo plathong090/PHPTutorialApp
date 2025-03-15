@@ -41,7 +41,7 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
                     startActivity(intent);
                     return true;
                 } else if (item.getItemId() == R.id.exercise) {
-                    intent = new Intent(IntroActivity.this, ExerciseActivity.class);
+                    intent = new Intent(IntroActivity.this, QuizActivity.class);
                     startActivity(intent);
                     return true;
                 } else if (item.getItemId() == R.id.profile) {
@@ -61,7 +61,7 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
             Intent back = new Intent(IntroActivity.this, MenuActivity.class);
             startActivity(back);
         } else if (view.getId() == R.id.nextintro) {
-            Intent next = new Intent(IntroActivity.this, InstallActivity.class);
+            Intent next = new Intent(IntroActivity.this, SyntaxActivity.class);
             startActivity(next);
         }
     }

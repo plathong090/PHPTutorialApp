@@ -6,7 +6,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -17,10 +16,10 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class MenuActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
     ListView listmenu;
     String[] itemsmenu = {
-            "สิ่งที่ควรรู้เกี่ยวกับ PHP" , "การติดตั้ง" , "ไวยากรณ์" , "การเขียน Comment" , "การตั้งตัวแปร Variables" ,
+            "สิ่งที่ควรรู้เกี่ยวกับ PHP" , "ไวยากรณ์" , "การเขียน Comment" , "การตั้งตัวแปร Variables" ,
             "คำสั่ง echo และ print" , "ประเภทของข้อมูล" , "Strings" , "Numbers" , "การเปลี่ยนแปลงประเภทข้อมูล" ,
             "ตัวแปรคณิตศาสตร์" , "ค่าคงที่" , "ค่าคงที่ที่กำหนดไว้ล่วงหน้า" , "ตัวดำเนินการ" , "if-else" ,
-            "Switch" , "Loop" , "ฟังก์ชัน" , "อาเรย์" , "ตัวแปรแบบ Globals" , "Regular Expressions",""};
+            "Switch" , "Loop" , "ฟังก์ชัน" , "อาเรย์" , "ตัวแปรแบบ Globals" , "Regular Expressions"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +46,7 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
                     startActivity(intent);
                     return true;
                 } else if (item.getItemId() == R.id.exercise) {
-                    intent = new Intent(MenuActivity.this, ExerciseActivity.class);
+                    intent = new Intent(MenuActivity.this, QuizActivity.class);
                     startActivity(intent);
                     return true;
                 } else if (item.getItemId() == R.id.profile) {
@@ -68,8 +67,7 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
 
         if (itemValue.equals("สิ่งที่ควรรู้เกี่ยวกับ PHP")) {
             intent = new Intent(MenuActivity.this, IntroActivity.class);
-        } else if (itemValue.equals("การติดตั้ง")) {
-            intent = new Intent(MenuActivity.this, InstallActivity.class);
+            startActivity(intent);
         } else if (itemValue.equals("ไวยากรณ์")) {
             intent = new Intent(MenuActivity.this, SyntaxActivity.class);
         } else if (itemValue.equals("การเขียน Comment")) {
@@ -112,8 +110,6 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
 
         if (intent != null) {
             startActivity(intent);
-        } else {
-            Toast.makeText(MenuActivity.this, "ไม่พบหน้าที่เลือก", Toast.LENGTH_SHORT).show();
         }
     }
 }

@@ -8,9 +8,6 @@ import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -41,7 +38,7 @@ public class SyntaxActivity extends AppCompatActivity implements View.OnClickLis
                     startActivity(intent);
                     return true;
                 } else if (item.getItemId() == R.id.exercise) {
-                    intent = new Intent(SyntaxActivity.this, ExerciseActivity.class);
+                    intent = new Intent(SyntaxActivity.this, QuizActivity.class);
                     startActivity(intent);
                     return true;
                 } else if (item.getItemId() == R.id.profile) {
@@ -58,7 +55,7 @@ public class SyntaxActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.backsyntax) {
-            Intent back = new Intent(SyntaxActivity.this, InstallActivity.class);
+            Intent back = new Intent(SyntaxActivity.this, IntroActivity.class);
             startActivity(back);
         } else if (view.getId() == R.id.nextsyntax) {
             Intent next = new Intent(SyntaxActivity.this, CommentsActivity.class);

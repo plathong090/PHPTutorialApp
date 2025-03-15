@@ -89,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="while- วนซ้ำผ่านบล็อกโค้ดตราบใดที่เงื่อนไขที่ระบุเป็นจริง"
+                android:text="while วนซ้ำผ่านบล็อกโค้ดตราบใดที่เงื่อนไขที่ระบุเป็นจริง"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
@@ -403,50 +403,6 @@
                 android:layout_height="138dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/l1_2" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ตัวอย่างอธิบาย"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="1.นิพจน์แรก , $x = 0;จะได้รับการประเมินหนึ่งครั้งและตั้งค่าตัวนับเป็น 0"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="2.นิพจน์ที่สอง , $x <= 10;จะถูกประเมิน ก่อนการวนซ้ำแต่ละครั้ง และบล็อกโค้ดจะถูกดำเนินการเฉพาะเมื่อนิพจน์นี้ประเมินผลเป็นจริง ในตัวอย่างนี้ นิพจน์จะเป็นจริงตราบใดที่$xน้อยกว่าหรือเท่ากับ 10"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="3.นิพจน์ที่สาม , $x++;จะได้รับการประเมิน หลังจากการวนซ้ำแต่ละครั้ง และในตัวอย่างนี้ นิพจน์จะเพิ่มค่าของ$xทีละหนึ่งในการวนซ้ำแต่ละครั้ง"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="คำชี้แจงการหยุดพัก"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ด้วยbreakคำสั่งนี้เราสามารถหยุดการวนซ้ำได้แม้ว่าเงื่อนไขจะยังคงเป็นจริงก็ตาม:"
-                android:textSize="16sp" />
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="138dp"

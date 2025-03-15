@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity{
                     startActivity(intent);
                     return true;
                 } else if (item.getItemId() == R.id.exercise) {
-                    intent = new Intent(MainActivity.this, ExerciseActivity.class);
+                    intent = new Intent(MainActivity.this, QuizActivity.class);
                     startActivity(intent);
                     return true;
                 } else if (item.getItemId() == R.id.profile) {

@@ -30,7 +30,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
             Intent aboutPage = new Intent(ProfileActivity.this , AboutProfileActivity.class);
             startActivity(aboutPage);
         } else if (view.getId() == R.id.exerciseProfile) {
-            Intent exercisePage = new Intent(ProfileActivity.this , ExerciseActivity.class);
+            Intent exercisePage = new Intent(ProfileActivity.this , QuizActivity.class);
             startActivity(exercisePage);
         } else if (view.getId() == R.id.loginProfile) {
             Intent lgPage = new Intent(ProfileActivity.this, LoginProfileActivity.class);
