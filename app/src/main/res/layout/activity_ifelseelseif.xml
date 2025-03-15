@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_marginTop="50dp">
+
+                <Button
+                    android:id="@+id/backsyntax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:text="ย้อนกลับ" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/nextsyntax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:text="ต่อไป" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="คำสั่งif ของ PHP"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำสั่งเงื่อนไขใช้เพื่อดำเนินการต่างๆ ตามเงื่อนไขที่แตกต่างกัน"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำสั่งเงื่อนไข PHP"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวดำเนินการทางคณิตศาสตร์ PHP"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ใน PHP เรามีคำสั่งเงื่อนไขดังต่อไปนี้:"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ifคำสั่ง - ดำเนินการโค้ดบางอย่างหากเงื่อนไขหนึ่งเป็นจริง"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="if...elseคำสั่ง - ดำเนินการโค้ดบางอย่างหากเงื่อนไขเป็นจริงและดำเนินการอีกโค้ดหนึ่งหากเงื่อนไขนั้นเป็นเท็จ"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="if...elseif...elseคำสั่ง - ดำเนินการโค้ดที่แตกต่างกันสำหรับเงื่อนไขมากกว่าสองเงื่อนไข"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="switchคำสั่ง - เลือกหนึ่งในหลายบล็อกของโค้ดที่จะดำเนินการ
+"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="PHP - คำสั่ง if"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำifสั่งจะดำเนินการโค้ดบางอย่างถ้าเงื่อนไขหนึ่งเป็นจริง"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ไวยกรณ์"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/f1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่าง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/f3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="เราสามารถใช้ตัวแปรในifคำสั่งได้ด้วย:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่าง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ผลลัพธ์ 'ขอให้เป็นวันที่ดี!' ถ้า$tค่าน้อยกว่า 20:"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/f2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวดำเนินการ PHP "
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวดำเนินการเปรียบเทียบ"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/f1_1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ต่อไปนี้คือตัวดำเนินการเปรียบเทียบ PHP ที่จะใช้ในifคำสั่ง:"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/f1_2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวดำเนินการเชิงตรรกะ"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ในการตรวจสอบเงื่อนไขมากกว่าหนึ่งข้อ เราสามารถใช้ตัวดำเนินการเชิงตรรกะ "
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่าง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/f1_3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ต่อไปนี้คือตัวดำเนินการเชิงตรรกะ PHP ที่จะใช้ในifคำสั่ง:"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/f1_4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="เราสามารถเปรียบเทียบเงื่อนไขต่างๆ ได้มากเท่าที่ต้องการในifข้อความเดียว:"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่าง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/f1_5" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="PHP - คำสั่ง if...else"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำif...elseสั่งจะดำเนินการโค้ดบางอย่างหากเงื่อนไขเป็นจริงและจะดำเนินการอีกโค้ดหนึ่งหากเงื่อนไขนั้นเป็นเท็จ"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ไวยากรณ์"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/f2_1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่าง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="เอาต์พุต 'Have a good day!' หากเวลาปัจจุบันน้อยกว่า 20 และ 'Have a good night!' หากไม่เช่นนั้น:"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/f2_2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="PHP - คำสั่ง if...elseif...else"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำสั่ง นี้if...elseif...elseจะดำเนินการโค้ดที่แตกต่างกันสำหรับเงื่อนไขมากกว่าสองเงื่อนไข"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ไวยากรณ์"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/f2_3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่าง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/f2_4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำสั่ง if แบบย่อของPHP"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="อักษรย่อถ้า"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="หากต้องการเขียนโค้ดให้สั้นลง คุณสามารถเขียนifคำสั่งในบรรทัดเดียวได้"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/f3_1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำย่อ ถ้า...ไม่เช่นนั้น"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="if... elseคำสั่งสามารถเขียนเป็นบรรทัดเดียวได้ แต่รูปแบบจะแตกต่างกันเล็กน้อย"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/f3_2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำ สั่ง ifแบบ ซ้อน ใน PHP"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ซ้อนกันถ้า"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คุณสามารถมี ifคำสั่งภายใน ifคำสั่งได้ ซึ่งเรียกว่าคำสั่งซ้อนกัน if"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/f4_1" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_menu" />
+</RelativeLayout>

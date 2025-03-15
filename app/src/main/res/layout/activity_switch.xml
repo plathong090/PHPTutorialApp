@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_marginTop="50dp">
+
+                <Button
+                    android:id="@+id/backsyntax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:text="ย้อนกลับ" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/nextsyntax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:text="ต่อไป" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="คำสั่งswitch ของ PHP"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำสั่ง นี้switchใช้เพื่อดำเนินการต่างๆ ตามเงื่อนไขที่แตกต่างกัน"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำสั่งสวิตช์ PHP"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ใช้switchคำสั่งเพื่อเลือกบล็อกโค้ดหนึ่งจากหลายบล็อกที่จะดำเนินการ"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ไวยากรณ์"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sw1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="มันทำงานดังนี้:"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="การแสดงออกจะได้รับการประเมินเพียงครั้งเดียว"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ค่าของนิพจน์จะถูกเปรียบเทียบกับค่าของแต่ละกรณี"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="หากมีการจับคู่ บล็อกโค้ดที่เกี่ยวข้องจะถูกดำเนินการ"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คีย์เวิร์ดbreakหลุดออกมาจากบล็อกสวิตช์"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="บล็อก โค้ดdefaultจะถูกดำเนินการหากไม่มีการจับคู่"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่าง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sw2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="เราสามารถใช้ตัวแปรในifคำสั่งได้ด้วย:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำสำคัญ: เบรก"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="เมื่อ PHP เข้าถึงbreakคำสำคัญ มันจะแยกออกจากบล็อกสวิตช์
+
+การดำเนินการนี้จะหยุดการทำงานของโค้ดเพิ่มเติม และจะไม่มีการทดสอบเคสใดๆ เพิ่มเติม
+
+บล็อคสุดท้ายไม่จำเป็นต้องหยุด บล็อคจะแตก (สิ้นสุด) อยู่ตรงนั้นอยู่แล้ว"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำเตือน: หากคุณละเว้นbreakคำสั่งในกรณีที่ไม่ใช่ครั้งสุดท้าย และกรณีนั้นตรงกัน กรณีถัดไปจะถูกดำเนินการเช่นกัน แม้ว่าการประเมินจะไม่ตรงกับกรณีก็ตาม!"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่าง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="$favcolorเป็นสีแดง ดังนั้นบล็อกโค้ดจากกรณี 'สีแดง' จึงถูกดำเนินการ แต่เนื่องจากไม่มีbreakคำสั่ง บล็อกโค้ดจากกรณี 'สีน้ำเงิน' จึงถูกดำเนินการด้วยเช่นกัน:"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sw3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คีย์เวิร์ดเริ่มต้น"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คีย์เวิร์ดdefaultระบุโค้ดที่จะรันถ้าไม่ตรงกับกรณี:"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่าง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sw4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="เคส นี้defaultไม่จำเป็นต้องเป็นเคสสุดท้ายในบล็อกสวิตช์:"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่าง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sw5" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="หมายเหตุ:หากdefaultไม่ใช่บล็อคสุดท้ายในswitchบล็อค โปรดจำไว้ว่าต้องจบdefaultบล็อคด้วย breakคำสั่ง"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="บล็อกโค้ดทั่วไป"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="หากคุณต้องการใช้บล็อกโค้ดเดียวกันหลายกรณี คุณสามารถระบุกรณีต่างๆ ได้ดังนี้:"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่าง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sw6" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_menu" />
+</RelativeLayout>

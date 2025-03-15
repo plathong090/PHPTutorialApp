@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_marginTop="50dp">
+
+                <Button
+                    android:id="@+id/backsyntax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:text="ย้อนกลับ" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/nextsyntax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:text="ต่อไป" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="ฟังก์ชั่น "
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ฟังก์ชั่นในตัว PHP"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="PHP มีฟังก์ชันในตัวมากกว่า 1,000 ฟังก์ชันที่สามารถเรียกใช้โดยตรงจากภายในสคริปต์เพื่อดำเนินการงานเฉพาะอย่างหนึ่ง"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ฟังก์ชั่นที่ผู้ใช้กำหนดใน PHP"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="นอกเหนือจากฟังก์ชัน PHP ในตัวแล้ว คุณยังสามารถสร้างฟังก์ชันของคุณเองได้อีกด้วย์"
+                android:textSize="16sp"
+                 />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ฟังก์ชันคือกลุ่มคำสั่งที่สามารถใช้ซ้ำๆ ในโปรแกรมได้"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ฟังก์ชันจะไม่ดำเนินการโดยอัตโนมัติเมื่อโหลดหน้า"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ฟังก์ชั่นจะถูกดำเนินการโดยการเรียกฟังก์ชั่น"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="สร้างฟังก์ชั่น"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="การประกาศฟังก์ชันที่ผู้ใช้กำหนดเริ่มต้นด้วยคำสำคัญfunctionตามด้วยชื่อของฟังก์ชัน:"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fc1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="หมายเหตุ:ชื่อฟังก์ชันต้องเริ่มต้นด้วยตัวอักษรหรือเครื่องหมายขีดล่าง ชื่อฟังก์ชันไม่คำนึงถึงตัวพิมพ์เล็ก/ใหญ่"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="เรียกใช้ฟังก์ชัน"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ในการเรียกใช้ฟังก์ชัน เพียงเขียนชื่อตามด้วยวงเล็บ ():"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fc2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ในตัวอย่างของเรา เราสร้างฟังก์ชันmyMessage()ชื่อ"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="วงเล็บเปิด{ระบุจุดเริ่มต้นของโค้ดฟังก์ชัน และวงเล็บปิด}ระบุจุดสิ้นสุดของฟังก์ชันฟังก์ชันจะแสดงผลลัพธ์ 'Hello world!'"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="อาร์กิวเมนต์ของฟังก์ชัน PHP"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่างต่อไปนี้มีฟังก์ชันที่มีอาร์กิวเมนต์หนึ่งตัว($fname)เมื่อ familyName()เรียกใช้ฟังก์ชัน เราจะส่งชื่อต่อด้วย เช่น('Jani')และชื่อนั้นจะถูกนำไปใช้ภายในฟังก์ชัน ซึ่งจะแสดงชื่อจริงที่แตกต่างกันหลายชื่อ แต่มีนามสกุลเหมือนกัน:"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fc3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่างต่อไปนี้มีฟังก์ชันที่มีอาร์กิวเมนต์สองตัว($fname, $year):"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fc4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ค่าอาร์กิวเมนต์เริ่มต้นของ PHP"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่างต่อไปนี้จะแสดงวิธีใช้พารามิเตอร์เริ่มต้น หากเราเรียกใช้ฟังก์ชันsetHeight()โดยไม่มีอาร์กิวเมนต์ ฟังก์ชันจะใช้ค่าเริ่มต้นเป็นอาร์กิวเมนต์:"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fc5" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="การส่งคืนค่า"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="หากต้องการให้ฟังก์ชันส่งคืนค่า ให้ใช้returnคำสั่ง:"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fc6" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="การส่งต่อข้อโต้แย้งโดยอ้างอิง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ใน PHP โดยทั่วไปอาร์กิวเมนต์จะถูกส่งต่อโดยค่า ซึ่งหมายความว่ามีการใช้สำเนาของค่าในฟังก์ชัน และตัวแปรที่ส่งผ่านเข้าไปในฟังก์ชันจะไม่สามารถเปลี่ยนแปลงได้"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="เมื่ออาร์กิวเมนต์ของฟังก์ชันถูกส่งผ่านการอ้างอิง การเปลี่ยนแปลงอาร์กิวเมนต์จะเปลี่ยนแปลงตัวแปรที่ส่งเข้ามาด้วย เมื่อต้องการเปลี่ยนอาร์กิวเมนต์ของฟังก์ชันให้เป็นการอ้างอิง จะใช้ตัวดำเนินการดังนี้:"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fc7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="จำนวนตัวแปรอาร์กิวเมนต์"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="การใช้...ตัวดำเนินการหน้าพารามิเตอร์ฟังก์ชันทำให้ฟังก์ชันยอมรับอาร์กิวเมนต์ที่ไม่ทราบจำนวน นี่เรียกอีกอย่างว่าฟังก์ชัน variadic
+
+อาร์กิวเมนต์ของฟังก์ชัน variadic จะกลายเป็นอาร์เรย์"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fc8" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คุณสามารถมีอาร์กิวเมนต์ที่มีความยาวแปรผันได้เพียงหนึ่งตัว และจะต้องเป็นอาร์กิวเมนต์สุดท้าย"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fc9" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="หากอาร์กิวเมนต์ Variadic ไม่ใช่อาร์กิวเมนต์สุดท้าย คุณจะได้รับข้อผิดพลาด"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fc10" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="การส่งต่อข้อโต้แย้งโดยอ้างอิง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="PHP จะเชื่อมโยงประเภทข้อมูลกับตัวแปรโดยอัตโนมัติตามค่าของตัวแปร เนื่องจากประเภทข้อมูลไม่ได้ถูกกำหนดไว้โดยเคร่งครัด คุณจึงสามารถทำสิ่งต่างๆ เช่น เพิ่มสตริงลงในจำนวนเต็มได้โดยไม่ทำให้เกิดข้อผิดพลาด"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ในตัวอย่างต่อไปนี้ เราจะพยายามส่งทั้งตัวเลขและสตริงไปยังฟังก์ชันโดยไม่ใช้strict:"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fc11" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="หากต้องการระบุstrictเราต้องตั้งค่าdeclare(strict_types=1);โดยจะต้องอยู่ในบรรทัดแรกของไฟล์ PHP"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ในตัวอย่างต่อไปนี้ เราพยายามส่งทั้งตัวเลขและสตริงไปยังฟังก์ชัน แต่ที่นี่เราได้เพิ่มstrict คำประกาศไว้:"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fc12" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำประกาศ นี้strictบังคับให้ต้องใช้สิ่งต่างๆ ตามวิธีที่ต้องการ"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="การประกาศประเภทการคืนค่า PHP"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ในการประกาศประเภทสำหรับฟังก์ชัน return ให้เพิ่มเครื่องหมายโคลอน ( :) และประเภทไว้ก่อนวงเล็บเปิด ( {) เมื่อประกาศฟังก์ชัน"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fc13" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คุณสามารถระบุชนิดการส่งคืนที่แตกต่างจากชนิดอาร์กิวเมนต์ได้ แต่ต้องแน่ใจว่าการส่งคืนนั้นเป็นชนิดที่ถูกต้อง:"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fc14" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_menu" />
+</RelativeLayout>

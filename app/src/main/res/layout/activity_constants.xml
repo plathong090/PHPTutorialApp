@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_marginTop="50dp">
+
+                <Button
+                    android:id="@+id/backsyntax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:text="ย้อนกลับ" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/nextsyntax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:text="ต่อไป" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="ค่าคงที่"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ค่าคงที่นั้นเหมือนกับตัวแปร ยกเว้นว่าเมื่อกำหนดค่าแล้ว จะไม่สามารถเปลี่ยนแปลงหรือยกเลิกการกำหนดค่าได้"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ค่าคงที่คือตัวระบุ (ชื่อ) สำหรับค่าธรรมดา ไม่สามารถเปลี่ยนค่าได้ระหว่างสคริปต์
+
+ชื่อค่าคงที่ที่ถูกต้องจะต้องเริ่มต้นด้วยตัวอักษรหรือเครื่องหมายขีดล่าง (ไม่มีเครื่องหมาย $ ก่อนชื่อค่าคงที่)"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="หมายเหตุ:ไม่เหมือนตัวแปร ค่าคงที่จะทำงานแบบทั่วโลกในสคริปต์ทั้งหมดโดยอัตโนมัติ"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="สร้างค่าคงที่"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ในการสร้างค่าคงที่ ให้ใช้define()ฟังก์ชัน"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="ไวยากรณ์"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="left"
+                android:layout_marginTop="10sp"
+                android:text="ตัวอย่าง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ct1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="left"
+                android:layout_marginTop="10sp"
+                android:text="พารามิเตอร์:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="name : ระบุชื่อของค่าคงที่"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ค่า : ระบุค่าของค่าคงที่"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="left"
+                android:layout_marginTop="10sp"
+                android:text="ตัวอย่าง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="สร้างค่าคงที่โดยใช้ ชื่อ ที่คำนึงถึงตัวพิมพ์เล็ก/ใหญ่ :"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ct2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="left"
+                android:layout_marginTop="10sp"
+                android:text="ตัวอย่าง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="left"
+                android:layout_marginTop="10sp"
+                android:text="คีย์เวิร์ด"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คุณสามารถสร้างค่าคงที่ได้โดยใช้constคำสำคัญ"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ct3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="left"
+                android:layout_marginTop="10sp"
+                android:text="constเทียบกับdefine()"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="constไม่สามารถสร้างภายในขอบเขตของบล็อกอื่นได้ เช่น ภายในฟังก์ชันหรือภายใน ifคำสั่ง"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="defineสามารถสร้างภายในขอบเขตบล็อกอื่นได้"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="left"
+                android:layout_marginTop="10sp"
+                android:text="อาร์เรย์คงที่"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="left"
+                android:layout_marginTop="10sp"
+                android:text="จาก PHP7 คุณสามารถสร้างค่าคงที่ Array ได้โดยใช้define()ฟังก์ชันนี้
+
+ตัวอย่าง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="left"
+                android:layout_marginTop="10sp"
+                android:text="ตัวอย่าง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ct4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="left"
+                android:layout_marginTop="10sp"
+                android:text="ค่าคงที่เป็นสากล"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ค่าคงที่จะเป็นแบบสากลโดยอัตโนมัติและสามารถใช้ทั่วทั้งสคริปต์ได้"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="left"
+                android:layout_marginTop="10sp"
+                android:text="ตัวอย่าง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่างนี้ใช้ค่าคงที่ภายในฟังก์ชัน แม้ว่าจะถูกกำหนดไว้ภายนอกฟังก์ชันก็ตาม:"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ct5" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_menu" />
+</RelativeLayout>

@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_marginTop="50dp">
+
+                <Button
+                    android:id="@+id/backsyntax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:text="ย้อนกลับ" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/nextsyntax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:text="ต่อไป" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="Superglobals"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="Superglobals ถูกนำมาใช้ใน PHP 4.1.0 และเป็นตัวแปรภายในที่พร้อมใช้งานอยู่เสมอในทุกขอบเขต"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวแปร superglobal ของ PHP มีดังนี้:"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="นิพจน์ทั่วไปอาจเป็นอักขระตัวเดียวหรือรูปแบบที่ซับซ้อนกว่านั้น"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="PHP $GLOBALS"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="$GLOBALSเป็นอาร์เรย์ที่ประกอบด้วยตัวแปรทั่วโลกทั้งหมด"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="GLOBALS"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ในการใช้ตัวแปรทั่วโลกภายในฟังก์ชัน คุณจะต้องกำหนดตัวแปรทั่วโลกด้วยglobalคำสำคัญ หรืออ้างอิงถึงตัวแปรทั่วโลกโดยใช้ $GLOBALSไวยากรณ์"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="สิ่งนี้แตกต่างจากภาษาการเขียนโปรแกรมอื่น ๆ ที่มีตัวแปรทั่วโลกโดยไม่ได้อ้างถึงตัวแปรเหล่านั้นว่าเป็นทั่วโลกโดยเฉพาะ"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คุณสามารถอ้างอิงถึงตัวแปรทั่วโลกภายในฟังก์ชันได้ด้วยการกำหนดเป็นทั่วโลกด้วยglobalคำสำคัญ"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="สร้างตัวแปร global"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวแปรที่สร้างขึ้นในขอบเขตด้านนอกสุดเป็นตัวแปรทั่วโลกไม่ว่าจะถูกสร้างโดยใช้ $GLOBALSไวยากรณ์หรือไม่ก็ตาม:"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g5" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวแปรที่ถูกสร้างภายในฟังก์ชันนั้นจะอยู่ในฟังก์ชันนั้นเท่านั้น แต่คุณสามารถสร้างตัวแปรทั่วโลกภายในฟังก์ชันได้โดยใช้$GLOBALSรูปแบบต่อไปนี้:"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g6" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="$_เซิร์ฟเวอร์"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="$_SERVERเป็นตัวแปรซูเปอร์โกลบอลของ PHP ที่เก็บข้อมูลเกี่ยวกับส่วนหัว เส้นทาง และตำแหน่งของสคริปต์"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่างด้านล่างนี้จะแสดงวิธีการใช้องค์ประกอบบางอย่างใน$_SERVER:"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตารางต่อไปนี้จะแสดงองค์ประกอบที่สำคัญที่สุดที่สามารถใส่ไว้ภายใน$_SERVER:"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g8" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g9" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="$_REQUEST"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="กล่าวอีกนัยหนึ่ง$_REQUESTคือเป็นอาร์เรย์ที่มีข้อมูลจาก $_GET, $_POST, $_COOKIEและ
+
+คุณสามารถเข้าถึงข้อมูลนี้โดยใช้$_REQUEST คำสำคัญตามด้วยชื่อของฟิลด์ฟอร์มหรือคุกกี้ ดังต่อไปนี้:"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g10" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="การใช้ $_REQUEST ในคำขอ $_POST"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำขอ POST โดยทั่วไปเป็นข้อมูลที่ส่งจากแบบฟอร์ม HTML"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g11" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="เมื่อผู้ใช้คลิกปุ่มส่ง ข้อมูลแบบฟอร์มจะถูกส่งไปยังไฟล์ PHP ที่ระบุไว้ใน actionแอตทริบิวต์ของ <form>แท็กในไฟล์แอคชัน เราสามารถใช้$_REQUESTตัวแปรเพื่อรวบรวมค่าของฟิลด์อินพุตได้"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g12" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ในตัวอย่างด้านล่าง เราได้ใส่แบบฟอร์ม HTML และโค้ด PHP ไว้ในไฟล์ PHP เดียวกัน
+
+นอกจากนี้เรายังได้เพิ่มบรรทัดพิเศษสำหรับการรักษาความปลอดภัยด้วย"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g13" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="การใช้ $_REQUEST ในคำขอ $_GET"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำขอ GET สามารถทำได้โดยการส่งแบบฟอร์มตามตัวอย่างด้านบน โดยมี การกำหนดmethodแอตทริบิวต์ขององค์ประกอบ HTML เป็น<form>GET"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำขอ GET ยังสามารถเป็นข้อมูลจากสตริงแบบสอบถาม (ข้อมูลที่เพิ่มหลังที่อยู่ URL) ได้อีกด้วย"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g14" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="เมื่อผู้ใช้คลิกลิงก์ ข้อมูลสตริงแบบสอบถามจะถูกส่งไปdemo_phpfile.phpยัง
+
+ในไฟล์ PHP เราสามารถใช้$_REQUESTตัวแปรเพื่อรวบรวมค่าของสตริงแบบสอบถามได้"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g15" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="$_POST"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="$_POST มีอาร์เรย์ของตัวแปรที่ได้รับผ่านทางวิธี HTTP POST"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="มีสองวิธีหลักในการส่งตัวแปรผ่านวิธี HTTP Post:"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="1.แบบฟอร์ม HTML"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="2.คำขอ HTTP ของ JavaScript"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="$_POST ในแบบฟอร์ม HTML"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="แบบฟอร์ม HTML จะส่งข้อมูลผ่านวิธี HTTP POST หากmethodแอตทริบิวต์ของแบบฟอร์มมีการตั้งค่างPOST'เป็นเพื่อสาธิตสิ่งนี้ เราเริ่มต้นด้วยการสร้างแบบฟอร์ม HTML ง่ายๆ:"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g16" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="เมื่อผู้ใช้คลิกปุ่มส่ง ข้อมูลแบบฟอร์มจะถูกส่งไปยังไฟล์ PHP ที่ระบุไว้ใน actionแอตทริบิวต์ของ <form>แท็ก
+
+ในไฟล์แอคชัน เราสามารถใช้$_POSTตัวแปรเพื่อรวบรวมค่าของฟิลด์อินพุตได้"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g17" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ในตัวอย่างด้านล่าง เราได้ใส่แบบฟอร์ม HTML และโค้ด PHP ไว้ในไฟล์ PHP เดียวกัน
+
+นอกจากนี้เรายังได้เพิ่มบรรทัดพิเศษสำหรับการรักษาความปลอดภัยด้วย"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g18" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="$_POST ในคำขอ HTTP ของ JavaScript"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="เมื่อส่งคำขอ HTTP ใน JavaScript คุณสามารถระบุได้ว่าวิธี HTTP เป็น POST
+
+เพื่อสาธิตสิ่งนี้ เราจะเริ่มต้นด้วยการสร้างฟังก์ชัน JavaScript ที่มีคำขอ HTTP:"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g19" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="  1.เริ่มต้นการร้องขอ HTTP"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="  2.ตั้งค่าวิธี HTTP เป็น POST"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="  3.ตั้งค่าหัวข้อคำขอที่ถูกต้อง"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="  4.สร้างฟังก์ชั่นเพื่อดำเนินการเมื่อคำขอเสร็จสิ้น"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="  5.ส่งคำขอ HTTP พร้อมfnameตั้งค่าตัวแปรเป็นMary"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ดูที่ฟังก์ชั่นที่จะถูกดำเนินการเมื่อคำขอเสร็จสิ้น:"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g20" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="จะพยายามเขียนการตอบสนองจากการดำเนินการในองค์ประกอบ HTML id='demo'ด้วย
+
+ให้เราสร้างหน้า HTML ที่มีองค์ประกอบดังกล่าว และยังมีปุ่มสำหรับดำเนินการฟังก์ชันด้วย
+
+หากเราเพิ่ม JavaScript ด้วย หน้าจะมีลักษณะดังนี้:"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g21" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ในไฟล์ PHP ที่ได้รับคำขอ HTTP นี้ ( demo_ajax.php) เราเพียงใช้$_POSTตัวแปรเพื่อเรียกค้นfnameตัวแปรและเขียนเป็นการตอบสนอง"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g22" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text=" $_GET"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="$_GET มีอาร์เรย์ของตัวแปรที่ได้รับผ่านทางวิธี HTTP GET"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="มีสองวิธีหลักในการส่งตัวแปรผ่านวิธี HTTP GET:"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="  1.สตริงแบบสอบถามใน URL"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="  2.แบบฟอร์ม HTML"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text=" สตริงแบบสอบถามใน URL"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="สตริงแบบสอบถามคือข้อมูลที่เพิ่มไว้ท้าย URL ในลิงก์ด้านล่าง ทุกอย่างที่อยู่หลัง ?เครื่องหมายจะเป็นส่วนหนึ่งของสตริงแบบสอบถาม:"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g23" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="สตริงแบบสอบถามด้านบนมีคู่คีย์/ค่าสองคู่:"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="subject=PHP และ web=W3schools.com"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ในไฟล์ PHP เราสามารถใช้$_GETตัวแปรเพื่อรวบรวมค่าของสตริงแบบสอบถามได้"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g24" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="$_GET ในแบบฟอร์ม HTML"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ในไฟล์ PHP เราสามารถใช้$_GETตัวแปรเพื่อรวบรวมค่าของสตริงแบบสอบถามได้"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="เมื่อผู้ใช้คลิกปุ่มส่ง ข้อมูลแบบฟอร์มจะถูกส่งไปยังไฟล์ PHP ที่ระบุไว้ใน actionแอตทริบิวต์ของ <form>แท็ก
+
+ฟิลด์ฟอร์มจะถูกส่งไปยังไฟล์ PHP พร้อมกับอินพุตของคุณเป็นสตริงแบบสอบถาม:"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g26" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ในไฟล์แอคชัน เราสามารถใช้$_GETตัวแปรเพื่อรวบรวมค่าของฟิลด์อินพุตได้"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/g27" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_menu" />
+</RelativeLayout>

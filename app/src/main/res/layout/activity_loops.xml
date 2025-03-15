@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_marginTop="50dp">
+
+                <Button
+                    android:id="@+id/backsyntax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:text="ย้อนกลับ" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/nextsyntax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:text="ต่อไป" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="ลูป PHP"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ในบทต่อไปนี้ คุณจะได้เรียนรู้วิธีการทำซ้ำโค้ดโดยใช้ลูปใน PHP"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ลูป PHP"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ลูปใช้เพื่อดำเนินการกับบล็อกโค้ดเดียวกันซ้ำแล้วซ้ำเล่า ตราบใดที่เงื่อนไขบางอย่างเป็นจริง"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ใน PHP เรามีคำสั่งเงื่อนไขดังต่อไปนี้:"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="while- วนซ้ำผ่านบล็อกโค้ดตราบใดที่เงื่อนไขที่ระบุเป็นจริง"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="do...while- วนซ้ำผ่านบล็อกโค้ดหนึ่งครั้ง จากนั้นทำซ้ำอีกตราบใดที่เงื่อนไขที่ระบุเป็นจริง"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="for- วนซ้ำผ่านบล็อกโค้ดตามจำนวนครั้งที่ระบุ"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="foreach- วนซ้ำผ่านบล็อกของโค้ดสำหรับแต่ละองค์ประกอบในอาร์เรย์"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="บทต่อไปนี้จะอธิบายและให้ตัวอย่างของประเภทของลูปแต่ละประเภท"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ลูป PHP while"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ลูwhileปจะดำเนินการตามบล็อกของโค้ดตราบใดที่เงื่อนไขที่ระบุเป็นจริง"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="หมายเหตุ:อย่าลืมเพิ่มค่า$iมิฉะนั้น ลูปจะดำเนินต่อไปเรื่อยๆ"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ลูwhileปไม่ทำงานตามจำนวนครั้งที่กำหนด แต่จะตรวจสอบหลังจากการวนซ้ำแต่ละครั้งว่าเงื่อนไขยังคงเป็นจริงหรือไม่"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="เงื่อนไขไม่จำเป็นต้องเป็นตัวนับ อาจเป็นสถานะของการดำเนินการหรือเงื่อนไขใดๆ ก็ได้ที่ประเมินว่าเป็นจริงหรือเท็จ"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="The break Statement"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำชี้แจงการดำเนินการต่อ"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ด้วยcontinueคำสั่งนี้ เราสามารถหยุดการวนซ้ำปัจจุบัน และดำเนินการต่อด้วยคำสั่งต่อไปนี้:"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ไวยากรณ์ทางเลือก"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ไวยากรณ์whileลูปสามารถเขียนได้โดยใช้ endwhileคำสั่งเช่นนี้"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="Step 10"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="หากคุณต้องการให้whileจำนวนลูปเท่ากับ 100 แต่เพิ่มขึ้นทีละ 10 เท่านั้น คุณสามารถเพิ่มตัวนับทีละ 10 แทนที่จะเป็น 1 ในแต่ละรอบได้:"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l5" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="PHP Do ลูป while"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ลูปdo...whileป – ลูปผ่านบล็อกโค้ดหนึ่งครั้ง จากนั้นทำซ้ำลูปต่อไปตราบเท่าที่เงื่อนไขที่ระบุเป็นจริง"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l6" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="หมายเหตุ:ในdo...whileลูป จะมีการทดสอบเงื่อนไขหลังจากดำเนินการคำสั่งภายในลูป ซึ่งหมายความว่าdo...whileลูปจะดำเนินการคำสั่งอย่างน้อยหนึ่งครั้ง แม้ว่าเงื่อนไขจะเป็นเท็จ ดูตัวอย่างด้านล่าง"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="มาดูกันว่าจะเกิดอะไรขึ้นถ้าเราตั้งค่า$iตัวแปรเป็น 8 แทนที่จะเป็น 1 ก่อนที่จะดำเนินการdo...whileลูปเดิมอีกครั้ง:"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่าง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำชี้แจงการหยุดพัก"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ด้วยbreakคำสั่งนี้เราสามารถหยุดการวนซ้ำได้แม้ว่าเงื่อนไขจะยังคงเป็นจริงก็ตาม:"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่าง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l8" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำชี้แจงการดำเนินการต่อ"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ด้วยcontinueคำสั่งนี้ เราสามารถหยุดการวนซ้ำปัจจุบัน และดำเนินการต่อด้วยคำสั่งต่อไปนี้:"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่าง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l9" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="PHP for ลูป"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ไวยากรณ์"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่าง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l1_1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="expression1จะถูกประเมินครั้งเดียว"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="expression2จะถูกประเมินก่อนการวนซ้ำแต่ละครั้ง"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="expression3จะถูกประเมินหลังจากการวนซ้ำแต่ละครั้ง"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่าง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l1_2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่างอธิบาย"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="1.นิพจน์แรก , $x = 0;จะได้รับการประเมินหนึ่งครั้งและตั้งค่าตัวนับเป็น 0"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="2.นิพจน์ที่สอง , $x <= 10;จะถูกประเมิน ก่อนการวนซ้ำแต่ละครั้ง และบล็อกโค้ดจะถูกดำเนินการเฉพาะเมื่อนิพจน์นี้ประเมินผลเป็นจริง ในตัวอย่างนี้ นิพจน์จะเป็นจริงตราบใดที่$xน้อยกว่าหรือเท่ากับ 10"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="3.นิพจน์ที่สาม , $x++;จะได้รับการประเมิน หลังจากการวนซ้ำแต่ละครั้ง และในตัวอย่างนี้ นิพจน์จะเพิ่มค่าของ$xทีละหนึ่งในการวนซ้ำแต่ละครั้ง"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำชี้แจงการหยุดพัก"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ด้วยbreakคำสั่งนี้เราสามารถหยุดการวนซ้ำได้แม้ว่าเงื่อนไขจะยังคงเป็นจริงก็ตาม:"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l1_3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำชี้แจงการดำเนินการต่อ"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ด้วยcontinueคำสั่งนี้ เราสามารถหยุดการวนซ้ำปัจจุบัน และดำเนินการต่อด้วยคำสั่งต่อไปนี้:"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l1_4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ขั้นตอนที่ 10"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่างนี้จะนับถึง 100 ด้วยหลักสิบ:"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l1_5" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="foreach ลูป"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="foreachลูป – ลูปผ่านบล็อกของโค้ดสำหรับแต่ละองค์ประกอบในอาร์เรย์หรือแต่ละคุณสมบัติในอ็อบเจ็กต์"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="การใช้foreachลูปที่พบบ่อยที่สุดคือการวนซ้ำผ่านรายการในอาร์เรย์"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l2_1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คีย์และค่า"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="อาร์เรย์ด้านบนเป็น อาร์เรย์ ที่มีดัชนีโดยรายการแรกมีคีย์ 0 รายการที่สองมีคีย์ 1 และเป็นเช่นนี้ไปเรื่อยๆ
+
+อาร์เรย์แบบ เชื่อมโยงมีความแตกต่างกัน อาร์เรย์แบบเชื่อมโยงใช้คีย์ที่มีชื่อที่คุณกำหนดให้กับอาร์เรย์นั้น และเมื่อวนซ้ำผ่านอาร์เรย์แบบเชื่อมโยง คุณอาจต้องการเก็บคีย์และค่าเอาไว้ด้วย
+
+สามารถทำได้โดยระบุทั้งคีย์และค่าในforeach คำจำกัดความ ดังนี้:"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l2_2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ลูป foreach บนวัตถุ"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ลูforeachปยังสามารถใช้วนซ้ำผ่านคุณสมบัติของวัตถุได้:"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l2_3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำชี้แจงการหยุดพัก"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ด้วยbreakคำสั่งนี้เราสามารถหยุดการวนซ้ำได้แม้ว่าจะยังไม่ถึงจุดสิ้นสุด:"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l2_4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำชี้แจงการดำเนินการต่อ"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ด้วยcontinueคำสั่งนี้ เราสามารถหยุดการวนซ้ำปัจจุบัน และดำเนินการต่อด้วยคำสั่งต่อไปนี้:"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l2_5" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="Foreach Byref"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="เมื่อวนซ้ำผ่านรายการอาร์เรย์ การเปลี่ยนแปลงใดๆ ที่ทำกับรายการอาร์เรย์จะไม่ส่งผลต่ออาร์เรย์ต้นฉบับตามค่าเริ่มต้"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l2_6" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="แต่การใช้ ตัวอักษรในforeachการประกาศจะทำให้รายการอาร์เรย์ได้รับการกำหนด โดยอ้างอิงซึ่งส่งผลให้การเปลี่ยนแปลงใดๆ ที่ทำกับรายการอาร์เรย์จะเกิดขึ้นกับอาร์เรย์ต้นฉบับด้วยเช่นกัน:"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l2_7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ไวยากรณ์ทางเลือก"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ไวยากรณ์foreachลูปสามารถเขียนได้โดยใช้ endforeachคำสั่งเช่นนี้"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l2_8" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="PHP Break"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำสั่ง นี้breakสามารถใช้เพื่อออกจากลูปประเภทต่างๆ ได้"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="เบรกในลูป"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำสั่ง นี้breakสามารถใช้เพื่อกระโดดออกจากforวงจรได้"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l3_1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="หยุดพักระหว่างลูป"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำสั่ง นี้breakสามารถใช้เพื่อกระโดดออกจากwhileวงจรได้"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l3_2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="หยุดพักการทำลูป Do While"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำสั่ง นี้breakสามารถใช้เพื่อกระโดดออกจากdo...whileวงจรได้"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l3_3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="หยุดพักในแต่ละลูป"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำสั่ง นี้breakสามารถใช้เพื่อกระโดดออกจากforeachวงจรได้"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l3_4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="หยุดพักในแต่ละลูป"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำสั่ง นี้breakสามารถใช้เพื่อกระโดดออกจากforeachวงจรได้"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l3_4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="PHP Continue"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำสั่ง นี้continueสามารถใช้เพื่อกระโดดออกจากการวนซ้ำปัจจุบันของลูปและดำเนินการต่อด้วยรอบถัดไป"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ดำเนินการต่อใน For Loops"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำสั่ง นี้continueจะหยุดการวนซ้ำปัจจุบันใน forลูปและดำเนินการต่อด้วยลูปถัดไป"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l4_1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ดำเนินการต่อในลูป While"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำสั่ง นี้continueจะหยุดการวนซ้ำปัจจุบันใน whileลูปและดำเนินการต่อด้วยลูปถัดไป"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l4_2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ดำเนินการต่อใน Do While Loop"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำสั่ง นี้continueจะหยุดการวนซ้ำปัจจุบันใน do...whileลูปและดำเนินการต่อด้วยลูปถัดไป"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l4_3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="ดำเนินการต่อในแต่ละรอบ"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="10dp"
+                android:text="คำสั่ง นี้continueจะหยุดการวนซ้ำปัจจุบันใน foreachลูปและดำเนินการต่อด้วยลูปถัดไป"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/l4_4" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_menu" />
+</RelativeLayout>
