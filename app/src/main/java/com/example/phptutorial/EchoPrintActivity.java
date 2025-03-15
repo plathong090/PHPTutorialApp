@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -24,10 +23,10 @@ public class EchoPrintActivity extends AppCompatActivity implements View.OnClick
 
     @Override
     public void onClick(View view) {
-        if (view.getId() == R.id.backsyntax) {
+        if (view.getId() == R.id.backecho) {
             Intent back = new Intent(EchoPrintActivity.this, VariablesActivity.class);
             startActivity(back);
-        } else if (view.getId() == R.id.nextsyntax) {
+        } else if (view.getId() == R.id.nextecho) {
 //            Intent next = new Intent(EchoPrintActivity.this,DataTypesActivity.class);
 //            startActivity(next);
         }

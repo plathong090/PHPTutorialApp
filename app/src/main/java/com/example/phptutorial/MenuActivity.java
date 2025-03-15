@@ -17,7 +17,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class MenuActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
     ListView listmenu;
     String[] itemsmenu = {
-            "บทนำ" , "การติดตั้ง" , "ไวยากรณ์" , "การเขียน Comment" , "การตั้งตัวแปร Variables" ,
+            "สิ่งที่ควรรู้เกี่ยวกับ PHP" , "การติดตั้ง" , "ไวยากรณ์" , "การเขียน Comment" , "การตั้งตัวแปร Variables" ,
             "คำสั่ง echo และ print" , "ประเภทของข้อมูล" , "Strings" , "Numbers" , "Casting" ,
             "ตัวแปรคณิตศาสตร์" , "ค่าคงที่" , "ค่าคงที่ที่กำหนดไว้ล่วงหน้า" , "ตัวดำเนินการ" , "if-else" ,
             "Switch" , "Loop" , "ฟังก์ชัน" , "อาเรย์" , "ตัวแปรแบบ Globals" , "Regular Expressions",""};
@@ -66,7 +66,7 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
         String itemValue = (String) listmenu.getItemAtPosition(position);
         Intent intent = null;
 
-        if (itemValue.equals("บทนำ")) {
+        if (itemValue.equals("สิ่งที่ควรรู้เกี่ยวกับ PHP")) {
             intent = new Intent(MenuActivity.this, IntroActivity.class);
         } else if (itemValue.equals("การติดตั้ง")) {
             intent = new Intent(MenuActivity.this, InstallActivity.class);

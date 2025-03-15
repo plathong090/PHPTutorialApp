@@ -23,33 +23,33 @@ public class InstallActivity extends AppCompatActivity implements View.OnClickLi
         backinstall.setOnClickListener(this);
         nextinstall.setOnClickListener(this);
 
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(MenuItem item) {
-                Intent intent = null;
-
-                if (item.getItemId() == R.id.home) {
-                    intent = new Intent(InstallActivity.this, MainActivity.class);
-                    startActivity(intent);
-                    return true;
-                } else if (item.getItemId() == R.id.lessons) {
-                    intent = new Intent(InstallActivity.this, MenuActivity.class);
-                    startActivity(intent);
-                    return true;
-                } else if (item.getItemId() == R.id.exercise) {
-                    intent = new Intent(InstallActivity.this, ExerciseActivity.class);
-                    startActivity(intent);
-                    return true;
-                } else if (item.getItemId() == R.id.profile) {
-                    intent = new Intent(InstallActivity.this, ProfileActivity.class);
-                    startActivity(intent);
-                    return true;
-                } else {
-                    return false;
-                }
-            }
-        });
+//        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+//        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+//            @Override
+//            public boolean onNavigationItemSelected(MenuItem item) {
+//                Intent intent = null;
+//
+//                if (item.getItemId() == R.id.home) {
+//                    intent = new Intent(InstallActivity.this, MainActivity.class);
+//                    startActivity(intent);
+//                    return true;
+//                } else if (item.getItemId() == R.id.lessons) {
+//                    intent = new Intent(InstallActivity.this, MenuActivity.class);
+//                    startActivity(intent);
+//                    return true;
+//                } else if (item.getItemId() == R.id.exercise) {
+//                    intent = new Intent(InstallActivity.this, ExerciseActivity.class);
+//                    startActivity(intent);
+//                    return true;
+//                } else if (item.getItemId() == R.id.profile) {
+//                    intent = new Intent(InstallActivity.this, ProfileActivity.class);
+//                    startActivity(intent);
+//                    return true;
+//                } else {
+//                    return false;
+//                }
+//            }
+//        });
     }
 
     @Override

@@ -4,19 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:fillViewport="true"
-    tools:context=".EchoPrintActivity">
+    android:fillViewport="true">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:layout_above="@id/bottom_navigation">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:layout_above="@id/bottom_navigation">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -60,43 +61,23 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="PHP มีสองวิธีพื้นฐานในการรับผลลัพธ์: echoและprint"
+                android:text="      การใช้ echo และ print มีลักษณะคล้ายกัน ทั้งสองใช้ส่งข้อมูลออกทางจอภาพ ซึ่งแตกต่างกันแค่ echo ไม่มีค่าส่งคืน ในขณะที่ print มีค่าส่งคืน"
                 android:textSize="16sp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="echoและprintมีลักษณะคล้ายคลึงกัน ทั้งสองใช้ส่งข้อมูลออกทางจอภาพ"
+                android:text="      ดังนั้น echo สามารถรับพารามิเตอร์ได้หลายตัว ในขณะที่ print สามารถรับอาร์กิวเมนต์ได้หนึ่งตัว โดย echo สามารถใช้ได้โดยมีหรือไม่มีวงเล็บก็ได้ สามารถใช้กับ HTML ได้"
                 android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ความแตกต่างนั้นเล็กน้อย: echoไม่มีค่าส่งคืน ในขณะที่printมีค่าส่งคืน "
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ดังนั้นจึงใช้ในนิพจน์ได้echoสามารถรับพารามิเตอร์ได้หลายตัว (ถึงแม้การใช้งานดังกล่าวจะพบได้น้อย) ในขณะที่printสามารถรับอาร์กิวเมนต์ได้หนึ่งตัว เร็วกว่า . echoเล็กน้อยprint"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="คำสั่ง นี้echoสามารถใช้ได้โดยมีหรือไม่มีวงเล็บก็ได้ : echoหรือecho()"
-                android:textSize="16sp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:gravity="left"
                 android:paddingTop="10sp"
-                android:text="ตัวอย่าง"
+                android:text="ตัวอย่างการใช้ echo , echo()"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -105,29 +86,13 @@
                 android:layout_height="101dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/echo1" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="แสดงข้อความ"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ตัวอย่างต่อไปนี้จะแสดงวิธีการแสดงข้อความด้วยecho คำสั่ง (สังเกตว่าข้อความสามารถมีมาร์กอัป HTML ได้):"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="ตัวอย่าง"
+                android:text="ตัวอย่างการใช้ echo กับ HTML"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -136,29 +101,14 @@
                 android:layout_height="101dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/echo2" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:gravity="left"
                 android:paddingTop="10sp"
-                android:text="ตัวแปรการแสดงผล"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ตัวอย่างต่อไปนี้จะแสดงวิธีการแสดงข้อความและตัวแปรด้วยecho คำสั่ง:"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="ตัวอย่าง"
+                android:text="ตัวอย่างการใช้งานในรูปแบบตัวแปร"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -173,37 +123,7 @@
                 android:fontFamily="@font/font"
                 android:gravity="left"
                 android:paddingTop="10sp"
-                android:text="การใช้เครื่องหมายคำพูดเดี่ยว"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="สตริงจะล้อมรอบด้วยเครื่องหมายคำพูด แต่ใน PHP ก็มีความแตกต่างระหว่างเครื่องหมายคำพูดเดี่ยวและเครื่องหมายคำพูดคู่"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="เมื่อใช้เครื่องหมายคำพูดคู่ คุณสามารถแทรกตัวแปรลงในสตริงได้ดังตัวอย่างด้านบน"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="เมื่อใช้เครื่องหมายคำพูดเดี่ยว ตัวแปรจะต้องถูกแทรกโดยใช้ .ตัวดำเนินการ"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="ตัวอย่าง"
+                android:text="การใช้เครื่องหมาย"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -212,6 +132,7 @@
                 android:layout_height="101dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/echo4" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -219,14 +140,14 @@
                 android:gravity="left"
                 android:paddingTop="10sp"
                 android:text="คำสั่ง Print PHP"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="คำสั่ง นี้printสามารถใช้ได้โดยมีหรือไม่มีวงเล็บก็ได้ : printหรือprint()"
+                android:text="      print สามารถใช้ได้โดยมีหรือไม่มีวงเล็บก็ได้ print หรือ print()"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
@@ -234,7 +155,7 @@
                 android:fontFamily="@font/font"
                 android:gravity="left"
                 android:paddingTop="10sp"
-                android:text="ตัวอย่าง"
+                android:text="ตัวอย่างการใช้งาน print , print()"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -243,99 +164,17 @@
                 android:layout_height="101dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/print1" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="แสดงข้อความ"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ตัวอย่างต่อไปนี้จะแสดงวิธีการแสดงข้อความด้วยprint คำสั่ง (สังเกตว่าข้อความสามารถมีมาร์กอัป HTML ได้):"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="ตัวอย่าง"
-                android:textSize="16sp"
-                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="101dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/print2" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="ตัวแปรการแสดงผล"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ตัวอย่างต่อไปนี้จะแสดงวิธีการแสดงข้อความและตัวแปรด้วย printคำสั่ง: "
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="ตัวอย่าง"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="101dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/print3" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="การใช้เครื่องหมายคำพูดเดี่ยว"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="เช่นเดียวกับ echo"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="ตัวอย่าง"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="101dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/print4" />
         </LinearLayout>
     </ScrollView>
 

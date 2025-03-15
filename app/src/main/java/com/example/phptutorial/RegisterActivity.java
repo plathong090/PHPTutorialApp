@@ -41,7 +41,6 @@ public class RegisterActivity extends AppCompatActivity {
                 Toast.makeText(this, "รหัสผ่านไม่ตรงกัน", Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(this, "สมัครสมาชิกสำเร็จ", Toast.LENGTH_SHORT).show();
-
                 Intent intent = new Intent(RegisterActivity.this, LoginProfileActivity.class);
                 startActivity(intent);
                 finish();

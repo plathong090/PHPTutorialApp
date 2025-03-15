@@ -29,6 +29,6 @@ public class VariablesActivity extends AppCompatActivity implements View.OnClick
         } else if (view.getId() == R.id.nextvariable) {
             Intent next = new Intent(VariablesActivity.this, EchoPrintActivity.class);
             startActivity(next);
-        } //can not next file
+        }
     }
 }
