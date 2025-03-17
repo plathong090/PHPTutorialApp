@@ -69,12 +69,30 @@
         <activity
             android:name=".PredefinedConstantsActivity"
             android:exported="false" />
-<!--        <activity-->
-<!--            android:name=".OperatorsActivity"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".IfElseActivity"-->
-<!--            android:exported="false" />-->
+        <activity
+            android:name=".OperatorsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IfElseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SwitchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FunctionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ArrayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GlobalsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegexActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

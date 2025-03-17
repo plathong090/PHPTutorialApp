@@ -88,9 +88,9 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
             intent = new Intent(MenuActivity.this, MathVariablesActivity.class); // หน้า MathVariablesActivity
         } else if (itemValue.equals("ค่าคงที่")) {
             intent = new Intent(MenuActivity.this, ConstantsActivity.class); // หน้า ConstantsActivity
-        }/* else if (itemValue.equals("ค่าคงที่ที่กำหนดไว้ล่วงหน้า")) {
+        } else if (itemValue.equals("ค่าคงที่ที่กำหนดไว้ล่วงหน้า")) {
             intent = new Intent(MenuActivity.this, PredefinedConstantsActivity.class); // หน้า PredefinedConstantsActivity
-        }/* else if (itemValue.equals("ตัวดำเนินการ")) {
+        } else if (itemValue.equals("ตัวดำเนินการ")) {
             intent = new Intent(MenuActivity.this, OperatorsActivity.class); // หน้า OperatorsActivity
         } else if (itemValue.equals("if-else")) {
             intent = new Intent(MenuActivity.this, IfElseActivity.class); // หน้า IfElseActivity
@@ -106,7 +106,7 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
             intent = new Intent(MenuActivity.this, GlobalsActivity.class); // หน้า GlobalsActivity
         } else if (itemValue.equals("Regular Expressions")) {
             intent = new Intent(MenuActivity.this, RegexActivity.class); // หน้า RegexActivity
-        }*/
+        }
 
         if (intent != null) {
             startActivity(intent);

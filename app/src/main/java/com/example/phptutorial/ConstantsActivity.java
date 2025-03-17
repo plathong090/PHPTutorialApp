@@ -24,10 +24,10 @@ public class ConstantsActivity extends AppCompatActivity implements View.OnClick
 
     @Override
     public void onClick(View view) {
-        if (view.getId() == R.id.backmagic) {
+        if (view.getId() == R.id.backconstants) {
             Intent back = new Intent(ConstantsActivity.this, MathVariablesActivity.class);
             startActivity(back);
-        } else if (view.getId() == R.id.nextmagic) {
+        } else if (view.getId() == R.id.nextconstants) {
             Intent next = new Intent(ConstantsActivity.this, PredefinedConstantsActivity.class);
             startActivity(next);
         }
