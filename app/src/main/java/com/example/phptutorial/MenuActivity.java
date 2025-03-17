@@ -90,7 +90,7 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
             intent = new Intent(MenuActivity.this, ConstantsActivity.class); // หน้า ConstantsActivity
         }/* else if (itemValue.equals("ค่าคงที่ที่กำหนดไว้ล่วงหน้า")) {
             intent = new Intent(MenuActivity.this, PredefinedConstantsActivity.class); // หน้า PredefinedConstantsActivity
-        } else if (itemValue.equals("ตัวดำเนินการ")) {
+        }/* else if (itemValue.equals("ตัวดำเนินการ")) {
             intent = new Intent(MenuActivity.this, OperatorsActivity.class); // หน้า OperatorsActivity
         } else if (itemValue.equals("if-else")) {
             intent = new Intent(MenuActivity.this, IfElseActivity.class); // หน้า IfElseActivity
