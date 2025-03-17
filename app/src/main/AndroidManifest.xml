@@ -49,6 +49,33 @@
             android:name=".EchoPrintActivity"
             android:exported="false" />
         <activity
+            android:name=".DataTypesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StringsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NumbersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CastingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MathVariablesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConstantsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PredefinedConstantsActivity"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".OperatorsActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".IfElseActivity"-->
+<!--            android:exported="false" />-->
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

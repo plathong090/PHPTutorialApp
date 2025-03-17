@@ -8,7 +8,7 @@ import android.widget.Button;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class IfelseActivity  extends AppCompatActivity implements View.OnClickListener{
+public class IfElseActivity  extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,10 +27,10 @@ public class IfelseActivity  extends AppCompatActivity implements View.OnClickLi
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.backifelse) {
-            Intent back = new Intent(IfelseActivity.this, OperatorsActivity.class);
+            Intent back = new Intent(IfElseActivity.this, OperatorsActivity.class);
             startActivity(back);
         } else if (view.getId() == R.id.nextifelse) {
-            Intent next = new Intent(IfelseActivity.this,SwitchActivity.class);
+            Intent next = new Intent(IfElseActivity.this,SwitchActivity.class);
             startActivity(next);
         }
 

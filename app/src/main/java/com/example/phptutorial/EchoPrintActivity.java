@@ -27,8 +27,8 @@ public class EchoPrintActivity extends AppCompatActivity implements View.OnClick
             Intent back = new Intent(EchoPrintActivity.this, VariablesActivity.class);
             startActivity(back);
         } else if (view.getId() == R.id.nextecho) {
-//            Intent next = new Intent(EchoPrintActivity.this,DataTypesActivity.class);
-//            startActivity(next);
+            Intent next = new Intent(EchoPrintActivity.this,DataTypesActivity.class);
+            startActivity(next);
         }
     }
 }

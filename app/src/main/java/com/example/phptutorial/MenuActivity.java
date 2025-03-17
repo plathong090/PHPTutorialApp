@@ -76,7 +76,7 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
             intent = new Intent(MenuActivity.this, VariablesActivity.class);
         } else if (itemValue.equals("คำสั่ง echo และ print")) {
             intent = new Intent(MenuActivity.this, EchoPrintActivity.class);
-        } /*else if (itemValue.equals("ประเภทของข้อมูล")) {
+        } else if (itemValue.equals("ประเภทของข้อมูล")) {
             intent = new Intent(MenuActivity.this, DataTypesActivity.class); // หน้า DataTypesActivity
         } else if (itemValue.equals("Strings")) {
             intent = new Intent(MenuActivity.this, StringsActivity.class); // หน้า StringsActivity
@@ -88,7 +88,7 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
             intent = new Intent(MenuActivity.this, MathVariablesActivity.class); // หน้า MathVariablesActivity
         } else if (itemValue.equals("ค่าคงที่")) {
             intent = new Intent(MenuActivity.this, ConstantsActivity.class); // หน้า ConstantsActivity
-        } else if (itemValue.equals("ค่าคงที่ที่กำหนดไว้ล่วงหน้า")) {
+        }/* else if (itemValue.equals("ค่าคงที่ที่กำหนดไว้ล่วงหน้า")) {
             intent = new Intent(MenuActivity.this, PredefinedConstantsActivity.class); // หน้า PredefinedConstantsActivity
         } else if (itemValue.equals("ตัวดำเนินการ")) {
             intent = new Intent(MenuActivity.this, OperatorsActivity.class); // หน้า OperatorsActivity
@@ -106,7 +106,7 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
             intent = new Intent(MenuActivity.this, GlobalsActivity.class); // หน้า GlobalsActivity
         } else if (itemValue.equals("Regular Expressions")) {
             intent = new Intent(MenuActivity.this, RegexActivity.class); // หน้า RegexActivity
-        } */
+        }*/
 
         if (intent != null) {
             startActivity(intent);

@@ -8,27 +8,27 @@ import android.widget.Button;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ConstantsActivity extends AppCompatActivity implements View.OnClickListener{
-    Button backconstants , nextconstants;
+public class MathVariablesActivity extends AppCompatActivity implements View.OnClickListener{
+    Button backmagic , nextmagic;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_constants);
+        setContentView(R.layout.activity_magicconstants);
 
-        backconstants = findViewById(R.id.backconstants);
-        nextconstants = findViewById(R.id.nextconstants);
-        backconstants.setOnClickListener(this);
-        nextconstants.setOnClickListener(this);
+        backmagic = findViewById(R.id.backmagic);
+        nextmagic = findViewById(R.id.nextmagic);
+        backmagic.setOnClickListener(this);
+        nextmagic.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.backmagic) {
-            Intent back = new Intent(ConstantsActivity.this, MathVariablesActivity.class);
+            Intent back = new Intent(MathVariablesActivity.this, CastingActivity.class);
             startActivity(back);
         } else if (view.getId() == R.id.nextmagic) {
-            Intent next = new Intent(ConstantsActivity.this, PredefinedConstantsActivity.class);
+            Intent next = new Intent(MathVariablesActivity.this, ConstantsActivity.class);
             startActivity(next);
         }
     }

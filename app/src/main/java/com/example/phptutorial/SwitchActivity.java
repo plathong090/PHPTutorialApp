@@ -27,7 +27,7 @@ public class SwitchActivity  extends AppCompatActivity implements View.OnClickLi
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.backswitch) {
-            Intent back = new Intent(SwitchActivity.this, IfelseActivity.class);
+            Intent back = new Intent(SwitchActivity.this, IfElseActivity.class);
             startActivity(back);
         } else if (view.getId() == R.id.nextswitch) {
            Intent next = new Intent(SwitchActivity.this,LoopActivity.class);

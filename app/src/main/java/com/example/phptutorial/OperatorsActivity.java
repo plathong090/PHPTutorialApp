@@ -30,7 +30,7 @@ public class OperatorsActivity  extends AppCompatActivity implements View.OnClic
             Intent back = new Intent(OperatorsActivity.this, PredefinedConstantsActivity.class);
             startActivity(back);
         } else if (view.getId() == R.id.nextoperator) {
-            Intent next = new Intent(OperatorsActivity.this, IfelseActivity.class);
+            Intent next = new Intent(OperatorsActivity.this, IfElseActivity.class);
             startActivity(next);
         }
 
