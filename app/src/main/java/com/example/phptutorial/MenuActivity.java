@@ -19,7 +19,7 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
             "สิ่งที่ควรรู้เกี่ยวกับ PHP" , "ไวยากรณ์" , "การเขียน Comment" , "การตั้งตัวแปร Variables" ,
             "คำสั่ง echo และ print" , "ประเภทของข้อมูล" , "Strings" , "Numbers" , "การเปลี่ยนแปลงประเภทข้อมูล" ,
             "ตัวแปรคณิตศาสตร์" , "ค่าคงที่" , "ค่าคงที่ที่กำหนดไว้ล่วงหน้า" , "ตัวดำเนินการ" , "if-else" ,
-            "Switch" , "Loop" , "ฟังก์ชัน" , "อาเรย์" , "ตัวแปรแบบ Globals" , "Regular Expressions"};
+            "Switch" , "Loop" , "ฟังก์ชัน" , "อาเรย์" , "ตัวแปรแบบ Globals" , "Regular Expressions",""};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +67,6 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
 
         if (itemValue.equals("สิ่งที่ควรรู้เกี่ยวกับ PHP")) {
             intent = new Intent(MenuActivity.this, IntroActivity.class);
-            startActivity(intent);
         } else if (itemValue.equals("ไวยากรณ์")) {
             intent = new Intent(MenuActivity.this, SyntaxActivity.class);
         } else if (itemValue.equals("การเขียน Comment")) {
@@ -77,35 +76,35 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
         } else if (itemValue.equals("คำสั่ง echo และ print")) {
             intent = new Intent(MenuActivity.this, EchoPrintActivity.class);
         } else if (itemValue.equals("ประเภทของข้อมูล")) {
-            intent = new Intent(MenuActivity.this, DataTypesActivity.class); // หน้า DataTypesActivity
+            intent = new Intent(MenuActivity.this, DataTypesActivity.class);
         } else if (itemValue.equals("Strings")) {
-            intent = new Intent(MenuActivity.this, StringsActivity.class); // หน้า StringsActivity
+            intent = new Intent(MenuActivity.this, StringsActivity.class);
         } else if (itemValue.equals("Numbers")) {
-            intent = new Intent(MenuActivity.this, NumbersActivity.class); // หน้า NumbersActivity
+            intent = new Intent(MenuActivity.this, NumbersActivity.class);
         } else if (itemValue.equals("การเปลี่ยนแปลงประเภทข้อมูล")) {
-            intent = new Intent(MenuActivity.this, CastingActivity.class); // หน้า CastingActivity
+            intent = new Intent(MenuActivity.this, CastingActivity.class);
         } else if (itemValue.equals("ตัวแปรคณิตศาสตร์")) {
-            intent = new Intent(MenuActivity.this, MathVariablesActivity.class); // หน้า MathVariablesActivity
+            intent = new Intent(MenuActivity.this, MathVariablesActivity.class);
         } else if (itemValue.equals("ค่าคงที่")) {
-            intent = new Intent(MenuActivity.this, ConstantsActivity.class); // หน้า ConstantsActivity
+            intent = new Intent(MenuActivity.this, ConstantsActivity.class);
         } else if (itemValue.equals("ค่าคงที่ที่กำหนดไว้ล่วงหน้า")) {
-            intent = new Intent(MenuActivity.this, PredefinedConstantsActivity.class); // หน้า PredefinedConstantsActivity
+            intent = new Intent(MenuActivity.this, PredefinedConstantsActivity.class);
         } else if (itemValue.equals("ตัวดำเนินการ")) {
-            intent = new Intent(MenuActivity.this, OperatorsActivity.class); // หน้า OperatorsActivity
+            intent = new Intent(MenuActivity.this, OperatorsActivity.class);
         } else if (itemValue.equals("if-else")) {
-            intent = new Intent(MenuActivity.this, IfElseActivity.class); // หน้า IfElseActivity
+            intent = new Intent(MenuActivity.this, IfElseActivity.class);
         } else if (itemValue.equals("Switch")) {
-            intent = new Intent(MenuActivity.this, SwitchActivity.class); // หน้า SwitchActivity
+            intent = new Intent(MenuActivity.this, SwitchActivity.class);
         } else if (itemValue.equals("Loop")) {
-            intent = new Intent(MenuActivity.this, LoopActivity.class); // หน้า LoopActivity
+            intent = new Intent(MenuActivity.this, LoopActivity.class);
         } else if (itemValue.equals("ฟังก์ชัน")) {
-            intent = new Intent(MenuActivity.this, FunctionActivity.class); // หน้า FunctionActivity
+            intent = new Intent(MenuActivity.this, FunctionActivity.class);
         } else if (itemValue.equals("อาเรย์")) {
-            intent = new Intent(MenuActivity.this, ArrayActivity.class); // หน้า ArrayActivity
+            intent = new Intent(MenuActivity.this, ArrayActivity.class);
         } else if (itemValue.equals("ตัวแปรแบบ Globals")) {
-            intent = new Intent(MenuActivity.this, GlobalsActivity.class); // หน้า GlobalsActivity
+            intent = new Intent(MenuActivity.this, GlobalsActivity.class);
         } else if (itemValue.equals("Regular Expressions")) {
-            intent = new Intent(MenuActivity.this, RegexActivity.class); // หน้า RegexActivity
+            intent = new Intent(MenuActivity.this, RegexActivity.class);
         }
 
         if (intent != null) {
