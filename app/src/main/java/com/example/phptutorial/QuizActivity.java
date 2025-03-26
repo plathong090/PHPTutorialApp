@@ -12,13 +12,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class QuizActivity extends AppCompatActivity implements AdapterView.OnItemClickListener  {
     ListView listquiz;
-    String[] itemsquiz = {"แบบทดสอบก่อนเรียน" , "แบบทดสอบ : ไวยากรณ์" , "แบบทดสอบ : Comment" , "แบบทดสอบ : Variables" ,
-            "แบบทดสอบ : คำสั่ง echo และ print" , "แบบทดสอบ : ประเภทของข้อมูล" , "แบบทดสอบ : Strings" ,
-            "แบบทดสอบ : Numbers" , "แบบทดสอบ : การเปลี่ยนแปลงประเภทข้อมูล" ,"แบบทดสอบ : ตัวแปรคณิตศาสตร์" ,
-            "แบบทดสอบ : ค่าคงที่" , "แบบทดสอบ : ค่าคงที่ที่กำหนดไว้ล่วงหน้า" , "แบบทดสอบ : ตัวดำเนินการ" ,
-            "แบบทดสอบ : if-else" , "แบบทดสอบ : Switch" , "แบบทดสอบ : Loop" ,
-            "แบบทดสอบ : ฟังก์ชัน" , "แบบทดสอบ : อาเรย์" , "แบบทดสอบ : ตัวแปรแบบ Globals" ,
-            "แบบทดสอบ : Regular Expressions"};
+    String[] itemsquiz = {
+            "แบบทดสอบก่อนเรียน" , "แบบทดสอบ : ไวยากรณ์พื้นฐาน" , "แบบทดสอบ : คำสั่ง echo และ print" , "แบบทดสอบ : การเขียน Comment" , "แบบทดสอบ : ชนิดของข้อมูล" ,
+            "แบบทดสอบ : การตั้งตัวแปร Variables" , "แบบทดสอบ : ตัวดำเนินการ" , "แบบทดสอบ : การใช้ if-else" ,
+            "แบบทดสอบ : การใช้ Switch" , "แบบทดสอบ : การใช้ Loop" , "แบบทดสอบ : ฟังก์ชัน" , "แบบทดสอบ : อาเรย์"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

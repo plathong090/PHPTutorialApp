@@ -58,39 +58,16 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="      ตัวแปร คือ &quot;ภาชนะ&quot; สำหรับการจัดเก็บข้อมูล ใน PHP ตัวแปรจะเริ่มต้นด้วย $ ตามด้วยชื่อของตัวแปร"
+                android:text="       ภาษา PHP จะต้องมีตัวแปรในการพักเก็บข้อมูลก่อนที่จะนำข้อมูลนั้นไปใช้งานเหมือนกับภาษาอื่น ซึ่งมีวิธีการกำหนดตัวแปรใน PHP ดังนี้"
                 android:textSize="16sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10dp"
-                android:text="ตัวอย่าง"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="101dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/variable1" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="42dp"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="กฎสำหรับตัวแปร PHP"
-                android:textSize="16sp"
-                android:textStyle="bold" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:text="          1. ตัวแปรเริ่มต้นด้วย $ ตามด้วยชื่อของตัวแปร"
                 android:textSize="16sp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -115,334 +92,117 @@
                 android:fontFamily="@font/font"
                 android:text="          5. ชื่อตัวแปรต้องคำนึงถึงตัวพิมพ์เล็ก/ใหญ่ ( $ageและ $AGEเป็นตัวแปรสองตัวที่แตกต่างกัน)"
                 android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="42dp"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ตัวแปร output"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="  คำสั่ง PHP echoมักใช้เพื่อส่งออกข้อมูลไปยังหน้าจอ"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
                 android:gravity="left"
-                android:text="ตัวอย่าง"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่างตัวแปรที่ถูกต้อง"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="101dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/variable2" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="101dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/variable3" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="  ตัวอย่างต่อไปนี้จะแสดงผลรวมของตัวแปรสองตัว"
+                android:text="          $myVar = 10;    ตัวแปรเก็บค่าตัวเลข"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="          $my_name = 'John';  ตัวแปรเก็บข้อความ"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="          $price = 99.99;  ตัวแปรเก็บทศนิยม"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="          $age = 30;  ตัวแปรเก็บอายุ"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="          $IsActive = true;   ตัวแปรเก็บค่า boolean (Case-sensitive)"
                 android:textSize="16sp" />
 
-            <ImageView
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="101dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/variable4" />
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="left"
+                android:paddingTop="10dp"
+                android:text="ตัวอย่างตัวแปรที่ไม่ถูกต้อง"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="          $123var = 50;   ไม่สามารถเริ่มต้นด้วยตัวเลข"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="          $if = 'test';   ใช้คำสำคัญไม่ได้"
+                android:textSize="16sp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="ประเภทตัวแปร"
+                android:text="ตัวอย่างการประกาศตัวแปรและการกำหนดค่า"
                 android:textSize="16sp"
                 android:textStyle="bold" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="  PHP ไม่มีคำสั่งในการประกาศตัวแปร และชนิดข้อมูลขึ้นอยู่กับค่าของตัวแปร
-ตัวอย่าง"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="101dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/variable5" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="  PHP รองรับประเภทข้อมูลต่อไปนี้:"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="  String, Integer, Float (floating point numbers - also called double), Boolean, Array, Object, NULL, Resource"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="42dp"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="รับประเภท"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:text="          &lt;?php"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text=" หากต้องการรับชนิดข้อมูลของตัวแปร ให้ใช้var_dump()ฟังก์ชัน"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="fitCenter"
-                android:src="@drawable/variable6" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:scaleType="fitCenter"
-                android:src="@drawable/variable7" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="42dp"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="กำหนดสตริงให้กับตัวแปร"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:text="          $age = 25; "/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text=" การกำหนดสตริงให้กับตัวแปรจะทำได้ด้วยชื่อตัวแปรตามด้วยเครื่องหมายเท่ากับและสตริง:"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:scaleType="fitCenter"
-                android:src="@drawable/variable8" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="42dp"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="กำหนดค่าหลายค่า"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:text='          $name = &quot;John&quot;;'/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text=" คุณสามารถกำหนดค่าเดียวกันให้กับตัวแปรหลายตัวในหนึ่งบรรทัดได้:"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:scaleType="fitCenter"
-                android:src="@drawable/variable9" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="42dp"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ขอบเขตตัวแปร PHP"
                 android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="5dp"
-                android:text=" ใน PHP คุณสามารถประกาศตัวแปรได้ทุกที่ในสคริปต์"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="5dp"
-                android:text="ขอบเขตของตัวแปรคือส่วนหนึ่งของสคริปต์ที่สามารถอ้างอิง/ใช้ตัวแปรได้"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="5dp"
-                android:text="PHP มีขอบเขตตัวแปรสามแบบที่แตกต่างกัน:"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text=" - local"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text=" - global"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text=" - static"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="42dp"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ขอบเขต Global และ Local "
-                android:textStyle="bold"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text=" ตัวแปรที่ประกาศภายนอกฟังก์ชันจะมีขอบเขตทGlobalและสามารถเข้าถึงได้จากภายนอกฟังก์ชันเท่านั้น:"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text=" global"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:scaleType="fitCenter"
-                android:src="@drawable/vrb" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text=" ตัวแปรที่ประกาศภายในฟังก์ชันจะมีขอบเขตlocalและสามารถเข้าถึงได้ภายในฟังก์ชันนั้นเท่านั้น:"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text=" local"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                android:text="          echo $name;"/>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:scaleType="fitCenter"
-                android:src="@drawable/vrb1" />
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="42dp"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="PHP global Keyword"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:text="          echo $age;"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text=" global Keyword ใช้ในการเข้าถึงตัวแปรทั่วโลกจากภายในฟังก์ชัน ในการดำเนินการนี้ ให้ใช้global Keyword ก่อนตัวแปร (ภายในฟังก์ชัน):"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:scaleType="fitCenter"
-                android:src="@drawable/vrb2" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text=" PHP ยังจัดเก็บตัวแปร global ทั้งหมดในอาร์เรย์ที่เรียกว่า . ซึ่งเก็บชื่อของตัวแปร อาร์เรย์นี้ยังเข้าถึงได้จากภายในฟังก์ชันและสามารถใช้เพื่ออัปเดตตัวแปรทั่วโลกได้โดยตรง$GLOBALS[index]index"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:scaleType="fitCenter"
-                android:src="@drawable/vrb3" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="42dp"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text=" PHP static Keyword"
                 android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text=" โดยปกติ เมื่อฟังก์ชันทำงานเสร็จเรียบร้อย/ดำเนินการเสร็จสิ้น ตัวแปรทั้งหมดจะถูกลบออก อย่างไรก็ตาม บางครั้ง เราต้องการไม่ให้ลบตัวแปรภายในเครื่อง เราต้องการตัวแปรนี้สำหรับงานอื่นต่อไป"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text=" ในการดำเนินการนี้ ให้ใช้staticคำสำคัญเมื่อคุณประกาศตัวแปรครั้งแรก:"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:scaleType="fitCenter"
-                android:src="@drawable/veb4" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text=" จากนั้น ทุกครั้งที่มีการเรียกใช้ฟังก์ชัน ตัวแปรนั้นจะยังคงมีข้อมูลที่มีอยู่จากครั้งล่าสุดที่เรียกใช้ฟังก์ชัน"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text=" หมายเหตุ:ตัวแปรยังคงอยู่ในระบบของฟังก์ชัน"
-                android:textSize="16sp" />
+                android:text='          &gt;'/>
         </LinearLayout>
     </ScrollView>
 

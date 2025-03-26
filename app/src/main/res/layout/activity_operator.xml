@@ -59,74 +59,9 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="ตัวดำเนินการใช้ในการดำเนินการกับตัวแปรและค่า"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="PHP แบ่งตัวดำเนินการเป็นกลุ่มต่อไปนี้:"
+                android:text="      ตัวดำเนินการ(Operator) เป็นเครื่องหมายหรือสัญลักษณ์ที่ใช้รับค่า (อาจเป็นตัวแปร , Literal,
+ค่าคงที่ หรือนิพจน์) โดยแบ่งออกเป็นกลุ่มต่าง ๆ ได้ดังนี้"
                 android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ตัวดำเนินการทางคณิตศาสตร์"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ตัวดำเนินการกำหนดค่า"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ตัวดำเนินการเปรียบเทียบ"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ตัวดำเนินการเพิ่ม/ลด"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ตัวดำเนินการเชิงตรรกะ"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ตัวดำเนินการสตริง"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ตัวดำเนินการอาร์เรย์"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ตัวดำเนินการกำหนดค่าแบบมีเงื่อนไข
-"
-                android:textSize="16sp" />
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -140,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="ตัวดำเนินการทางคณิตศาสตร์ PHP ใช้กับค่าตัวเลขเพื่อดำเนินการทางคณิตศาสตร์ทั่วไป เช่น การบวก ลบ คูณ เป็นต้น"
+                android:text="      ใช้คำนวณทางด้านคณิตศาสตร์ ได้แก่ การบวก ลบ คูณ หาร และโมดูลัส ดังนี้"
                 android:textSize="16sp" />
 
             <ImageView
@@ -154,6 +89,7 @@
                 android:layout_height="wrap_content"
                 android:paddingTop="10dp"
                 android:text="ตัวดำเนินการกำหนดค่า PHP"
+                android:fontFamily="@font/font"
                 android:textSize="16sp"
                 android:textStyle="bold" />
             <TextView
@@ -161,14 +97,14 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="ตัวดำเนินการกำหนดค่า PHP ใช้กับค่าตัวเลขเพื่อเขียนค่าลงในตัวแปร"
+                android:text="      ตัวดำเนินการกำหนดค่า PHP ใช้กับค่าตัวเลขเพื่อเขียนค่าลงในตัวแปร"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="ตัวดำเนินการกำหนดค่าพื้นฐานใน PHP คือ '='ซึ่งหมายความว่าตัวดำเนินการทางด้านซ้ายจะถูกตั้งค่าเป็นค่าของนิพจน์การกำหนดค่าทางด้านขวา"
+                android:text="      ตัวดำเนินการกำหนดค่าพื้นฐานใน PHP คือ '='ซึ่งหมายความว่าตัวดำเนินการทางด้านซ้ายจะถูกตั้งค่าเป็นค่าของนิพจน์การกำหนดค่าทางด้านขวา"
                 android:textSize="16sp" />
             <ImageView
                 android:layout_width="match_parent"
@@ -188,7 +124,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="ตัวดำเนินการเปรียบเทียบ PHP ใช้เพื่อเปรียบเทียบค่าสองค่า (ตัวเลขหรือสตริง):"
+                android:text="      ตัวดำเนินการเปรียบเทียบ PHP ใช้เพื่อเปรียบเทียบค่าสองค่า (ตัวเลขหรือสตริง):"
                 android:textSize="16sp" />
 
             <ImageView
@@ -284,10 +220,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:gravity="center"
                 android:paddingTop="10dp"
                 android:text="ตัวดำเนินการกำหนดค่าตามเงื่อนไขของ PHP"
-                android:textSize="24sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
             <TextView
                 android:layout_width="match_parent"

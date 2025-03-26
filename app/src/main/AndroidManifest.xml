@@ -13,6 +13,12 @@
         android:theme="@style/Theme.PHPTutorial"
         tools:targetApi="31">
         <activity
+            android:name=".Quiz11Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz12Activity"
+            android:exported="false" />
+        <activity
             android:name=".Quiz1Activity"
             android:exported="false" />
         <activity
@@ -71,6 +77,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
