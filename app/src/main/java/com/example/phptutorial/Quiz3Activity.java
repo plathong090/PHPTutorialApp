@@ -16,11 +16,15 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class Quiz3Activity extends AppCompatActivity {
     RadioGroup radioGroup1, radioGroup2, radioGroup3;
     Button back, next, check;
+    Database DB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz3);
+
+        String UserID = getIntent().getStringExtra("UserID");
+        String Username = getIntent().getStringExtra("Username");
 
         radioGroup1 = findViewById(R.id.radioGroup1);
         radioGroup2 = findViewById(R.id.radioGroup2);
@@ -34,6 +38,8 @@ public class Quiz3Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Quiz3Activity.this, Quiz2Activity.class);
+                intent.putExtra("UserID" , UserID);
+                intent.putExtra("Username" , Username);
                 startActivity(intent);
                 finish();
             }
@@ -43,6 +49,8 @@ public class Quiz3Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Quiz3Activity.this, Quiz4Activity.class);
+                intent.putExtra("UserID" , UserID);
+                intent.putExtra("Username" , Username);
                 startActivity(intent);
                 finish();
             }
@@ -64,18 +72,26 @@ public class Quiz3Activity extends AppCompatActivity {
 
                 if (item.getItemId() == R.id.home) {
                     intent = new Intent(Quiz3Activity.this, MainActivity.class);
+                    intent.putExtra("UserID" , UserID);
+                    intent.putExtra("Username" , Username);
                     startActivity(intent);
                     return true;
                 } else if (item.getItemId() == R.id.lessons) {
                     intent = new Intent(Quiz3Activity.this, MenuActivity.class);
+                    intent.putExtra("UserID" , UserID);
+                    intent.putExtra("Username" , Username);
                     startActivity(intent);
                     return true;
                 } else if (item.getItemId() == R.id.exercise) {
                     intent = new Intent(Quiz3Activity.this, QuizActivity.class);
+                    intent.putExtra("UserID" , UserID);
+                    intent.putExtra("Username" , Username);
                     startActivity(intent);
                     return true;
                 } else if (item.getItemId() == R.id.profile) {
                     intent = new Intent(Quiz3Activity.this, ProfileActivity.class);
+                    intent.putExtra("UserID" , UserID);
+                    intent.putExtra("Username" , Username);
                     startActivity(intent);
                     return true;
                 } else {
@@ -92,11 +108,13 @@ public class Quiz3Activity extends AppCompatActivity {
             Toast.makeText(Quiz3Activity.this, "กรุณาตอบคำถามให้ครบ", Toast.LENGTH_SHORT).show();
         } else {
             String message = "คำตอบที่ถูกต้อง:\n";
+            int score = 0;
 
             int selectedId1 = radioGroup1.getCheckedRadioButtonId();
             RadioButton selectedButton1 = findViewById(selectedId1);
             if (selectedButton1 != null && selectedButton1.getText().toString().equals("echo")) {
                 message += "ข้อ 1: ถูกต้อง\n";
+                score++;
             } else {
                 message += "ข้อ 1: ผิด\n";
             }
@@ -105,6 +123,7 @@ public class Quiz3Activity extends AppCompatActivity {
             RadioButton selectedButton2 = findViewById(selectedId2);
             if (selectedButton2 != null && selectedButton2.getText().toString().equals("echo สามารถแสดงผลได้หลายค่าในครั้งเดียว ส่วน print แสดงผลได้แค่ค่าเดียว")) {
                 message += "ข้อ 2: ถูกต้อง\n";
+                score++;
             } else {
                 message += "ข้อ 2: ผิด\n";
             }
@@ -113,10 +132,20 @@ public class Quiz3Activity extends AppCompatActivity {
             RadioButton selectedButton3 = findViewById(selectedId3);
             if (selectedButton3 != null && selectedButton3.getText().toString().equals("echo และ print ใช้ร่วมกับ \n หรือ <br>")) {
                 message += "ข้อ 3: ถูกต้อง\n";
+                score++;
             } else {
                 message += "ข้อ 3: ผิด\n";
             }
-            Toast.makeText(Quiz3Activity.this, message, Toast.LENGTH_LONG).show();
+
+            String UserID = getIntent().getStringExtra("UserID");
+            DB = new Database(this);
+            boolean res = DB.insertScore(Integer.parseInt(UserID),3, score);
+            if (res) {
+                Toast.makeText(Quiz3Activity.this, "ได้คะแนนทั้งหมด : " + score + " คะแนน", Toast.LENGTH_LONG).show();
+                Toast.makeText(Quiz3Activity.this, message, Toast.LENGTH_LONG).show();
+            } else {
+                Toast.makeText(Quiz3Activity.this, "เกิดข้อผิดพลาด", Toast.LENGTH_LONG).show();
+            }
         }
     }
 }

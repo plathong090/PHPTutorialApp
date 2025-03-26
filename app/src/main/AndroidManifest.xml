@@ -52,8 +52,9 @@
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginProfileActivity"
+            android:name=".MainActivity"
             android:exported="false" />
+
         <activity
             android:name=".QuizActivity"
             android:exported="false" />
@@ -67,7 +68,7 @@
             android:name=".SyntaxActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ProfileActivity"
             android:exported="false" />
         <activity
             android:name=".IntroActivity"
@@ -97,7 +98,7 @@
             android:name=".ArrayActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileActivity"
+            android:name=".LoginProfileActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

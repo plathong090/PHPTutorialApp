@@ -81,4 +81,20 @@ public class Database extends SQLiteOpenHelper {
                 Column_Password + " =?" , new String[]{username,password});
         return (read != null && read.moveToFirst()) ? read : null;
     }
+
+//    public static final String Score_table = "Score_table";
+//    public static final String Column_ScoreId = "ScoreId";
+//    public static final String Column_UserId = "UserId";
+//    public static final String Column_QuizId = "QuizId";
+//    public static final String Column_Score = "Score";
+
+    public boolean insertScore(int UserID, int QuizID, int Score) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(Column_UserId, UserID);
+        values.put(Column_QuizId, QuizID);
+        values.put(Column_Score, Score);
+        long res = db.insert(Score_table, null, values);
+        return (res == -1) ? false : true;
+    }
 }
