@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Quiz11Activity">
+    tools:context=".Quiz10Activity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -49,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:gravity="center"
-                android:text="แบบทดสอบ : ฟังก์ชัน"
+                android:text="แบบทดสอบ : การใช้ Loop"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
@@ -60,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="ฟังก์ชันใดที่ใช้ในการประกาศฟังก์ชันใหม่"
+                android:text="for loop ใช้ทำอะไร"
                 android:textSize="16sp"
                 android:textColor="@color/black"/>
             <RadioGroup
@@ -71,19 +71,22 @@
                 android:id="@+id/ans1_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="function_name()"
+                android:fontFamily="@font/font"
+                android:text="ทำงานซ้ำหลายครั้งโดยไม่จำกัดจำนวน"
                 android:textColor="@color/black" />
             <RadioButton
                 android:id="@+id/ans1_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="new function()"
+                android:text="ทำงานซ้ำจนกว่าจะพบเงื่อนไขที่เป็นจริง"
+                android:fontFamily="@font/font"
                 android:textColor="@color/black" />
             <RadioButton
                 android:id="@+id/ans1_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="function"
+                android:text="ทำงานซ้ำโดยกำหนดจำนวนการวนลูปล่วงหน้า"
+                android:fontFamily="@font/font"
                 android:textColor="@color/black"/>
             </RadioGroup>
             <!-- ข้อ 2 -->
@@ -92,7 +95,28 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="ถ้าต้องการให้คืนค่าผลลัพธ์ จะใช้คำสั่งใด"
+                android:text="โค้ดนี้จะให้ผลลัพธ์อะไร"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="      for ($i = 1; $i &lt;= 3; $i++) {"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="          echo $i . &quot; &quot;;"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="      }"
                 android:textSize="16sp"
                 android:textColor="@color/black"/>
             <RadioGroup
@@ -103,28 +127,31 @@
                 android:id="@+id/ans2_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="return"
+                android:fontFamily="@font/font"
+                android:text="1 2 3"
                 android:textColor="@color/black" />
             <RadioButton
                 android:id="@+id/ans2_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="echo()"
+                android:text="0 1 2"
+                android:fontFamily="@font/font"
                 android:textColor="@color/black" />
             <RadioButton
                 android:id="@+id/ans2_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="output"
-                android:textColor="@color/black"/></RadioGroup>
-
+                android:text="1 4 7"
+                android:fontFamily="@font/font"
+                android:textColor="@color/black"/>
+            </RadioGroup>
             <!-- ข้อ 3 -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="เรียกใช้ฟังก์ชันจะต้องใช้คำสั่งใด"
+                android:text="while loop ใช้ทำอะไร"
                 android:textSize="16sp"
                 android:textColor="@color/black"/>
             <RadioGroup
@@ -135,20 +162,25 @@
                 android:id="@+id/ans3_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="execute()"
+                android:text="ทำงานซ้ำจนกว่าจะถึงจำนวนที่กำหนด"
+                android:fontFamily="@font/font"
                 android:textColor="@color/black" />
             <RadioButton
                 android:id="@+id/ans3_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="call()"
+                android:fontFamily="@font/font"
+                android:text="ทำงานซ้ำตามเงื่อนไขที่เป็นจริง"
                 android:textColor="@color/black" />
             <RadioButton
                 android:id="@+id/ans3_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="function_name()"
-                android:textColor="@color/black"/></RadioGroup>
+                android:fontFamily="@font/font"
+                android:text="ใช้ในการเปรียบเทียบสองค่า"
+                android:textColor="@color/black"/>
+            </RadioGroup>
+
             <Button
                 android:id="@+id/check"
                 android:layout_width="wrap_content"

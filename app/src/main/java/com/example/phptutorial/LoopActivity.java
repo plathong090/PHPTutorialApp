@@ -22,8 +22,6 @@ public class LoopActivity  extends AppCompatActivity implements View.OnClickList
         backloops.setOnClickListener(this);
         nextloops.setOnClickListener(this);
     }
-
-
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.backloops) {
@@ -33,6 +31,5 @@ public class LoopActivity  extends AppCompatActivity implements View.OnClickList
             Intent next = new Intent(LoopActivity.this,FunctionActivity.class);
             startActivity(next);
         }
-
     }
 }

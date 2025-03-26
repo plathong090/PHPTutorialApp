@@ -13,6 +13,33 @@
         android:theme="@style/Theme.PHPTutorial"
         tools:targetApi="31">
         <activity
+            android:name=".Quiz10Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz9Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz8Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz7Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz2Activity"
+            android:exported="false" />
+        <activity
             android:name=".Quiz11Activity"
             android:exported="false" />
         <activity

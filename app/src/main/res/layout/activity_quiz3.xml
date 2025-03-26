@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Quiz11Activity">
+    tools:context=".Quiz3Activity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -44,12 +44,13 @@
                     android:fontFamily="@font/font"
                     android:text="ต่อไป" />
             </LinearLayout>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:gravity="center"
-                android:text="แบบทดสอบ : ฟังก์ชัน"
+                android:text="แบบทดสอบ : คำสั่ง echo , print"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
@@ -60,63 +61,71 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="ฟังก์ชันใดที่ใช้ในการประกาศฟังก์ชันใหม่"
+                android:text="คำสั่งใดใน PHP ที่ใช้ในการแสดงผลข้อความไปยังหน้าจอ"
                 android:textSize="16sp"
                 android:textColor="@color/black"/>
             <RadioGroup
                 android:id="@+id/radioGroup1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-            <RadioButton
-                android:id="@+id/ans1_1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="function_name()"
-                android:textColor="@color/black" />
-            <RadioButton
-                android:id="@+id/ans1_2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="new function()"
-                android:textColor="@color/black" />
-            <RadioButton
-                android:id="@+id/ans1_3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="function"
-                android:textColor="@color/black"/>
+
+                <RadioButton
+                    android:id="@+id/ans1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="echo"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/ans1_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="println"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/ans1_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="output"
+                    android:textColor="@color/black"/>
             </RadioGroup>
+
             <!-- ข้อ 2 -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="ถ้าต้องการให้คืนค่าผลลัพธ์ จะใช้คำสั่งใด"
+                android:text="คำสั่ง echo และ print ใน PHP มีความแตกต่างกันอย่างไร"
                 android:textSize="16sp"
                 android:textColor="@color/black"/>
             <RadioGroup
                 android:id="@+id/radioGroup2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-            <RadioButton
-                android:id="@+id/ans2_1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="return"
-                android:textColor="@color/black" />
-            <RadioButton
-                android:id="@+id/ans2_2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="echo()"
-                android:textColor="@color/black" />
-            <RadioButton
-                android:id="@+id/ans2_3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="output"
-                android:textColor="@color/black"/></RadioGroup>
+
+                <RadioButton
+                    android:id="@+id/ans2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="echo สามารถแสดงผลได้หลายค่าในครั้งเดียว ส่วน print แสดงผลได้แค่ค่าเดียว"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/ans2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="echo ใช้สำหรับการคำนวณค่า ส่วน print ใช้แสดงข้อความ"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/ans2_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="echo ต้องใช้เครื่องหมายคอมม่า ส่วน print ใช้เครื่องหมายบวก +"
+                    android:textColor="@color/black"/>
+            </RadioGroup>
 
             <!-- ข้อ 3 -->
             <TextView
@@ -124,31 +133,36 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="เรียกใช้ฟังก์ชันจะต้องใช้คำสั่งใด"
+                android:text="คำสั่งใดที่สามารถใช้ในการแสดงผลข้อความได้หลายบรรทัด"
                 android:textSize="16sp"
                 android:textColor="@color/black"/>
             <RadioGroup
                 android:id="@+id/radioGroup3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-            <RadioButton
-                android:id="@+id/ans3_1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="execute()"
-                android:textColor="@color/black" />
-            <RadioButton
-                android:id="@+id/ans3_2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="call()"
-                android:textColor="@color/black" />
-            <RadioButton
-                android:id="@+id/ans3_3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="function_name()"
-                android:textColor="@color/black"/></RadioGroup>
+
+                <RadioButton
+                    android:id="@+id/ans3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="echo"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/ans3_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="echo และ print"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/ans3_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="echo และ print ใช้ร่วมกับ \n หรือ &lt;br&gt;"
+                    android:textColor="@color/black"/>
+            </RadioGroup>
+
             <Button
                 android:id="@+id/check"
                 android:layout_width="wrap_content"
@@ -158,6 +172,7 @@
                 android:drawableEnd="@android:drawable/btn_star_big_on"
                 android:fontFamily="@font/font"
                 android:text="เช็คคำตอบ" />
+
         </LinearLayout>
     </ScrollView>
 
