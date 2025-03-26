@@ -58,7 +58,7 @@ public class SyntaxActivity extends AppCompatActivity implements View.OnClickLis
             Intent back = new Intent(SyntaxActivity.this, IntroActivity.class);
             startActivity(back);
         } else if (view.getId() == R.id.nextsyntax) {
-            Intent next = new Intent(SyntaxActivity.this, CommentsActivity.class);
+            Intent next = new Intent(SyntaxActivity.this, EchoPrintActivity.class);
             startActivity(next);
         }
     }

@@ -37,9 +37,6 @@
             android:name=".SyntaxActivity"
             android:exported="false" />
         <activity
-            android:name=".InstallActivity"
-            android:exported="false" />
-        <activity
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity
@@ -50,24 +47,6 @@
             android:exported="false" />
         <activity
             android:name=".DataTypesActivity"
-            android:exported="false" />
-        <activity
-            android:name=".StringsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".NumbersActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CastingActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MathVariablesActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ConstantsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PredefinedConstantsActivity"
             android:exported="false" />
         <activity
             android:name=".OperatorsActivity"
@@ -88,17 +67,10 @@
             android:name=".ArrayActivity"
             android:exported="false" />
         <activity
-            android:name=".GlobalsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RegexActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

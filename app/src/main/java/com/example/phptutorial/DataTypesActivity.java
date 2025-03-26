@@ -27,10 +27,10 @@ public class DataTypesActivity extends AppCompatActivity implements View.OnClick
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.backdatatype) {
-            Intent back = new Intent(DataTypesActivity.this, EchoPrintActivity.class);
+            Intent back = new Intent(DataTypesActivity.this, CommentsActivity.class);
             startActivity(back);
         } else if (view.getId() == R.id.nextdatatype) {
-            Intent next = new Intent(DataTypesActivity.this, StringsActivity.class);
+            Intent next = new Intent(DataTypesActivity.this, VariablesActivity.class);
             startActivity(next);
         }
     }

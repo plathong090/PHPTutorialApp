@@ -24,10 +24,10 @@ public class VariablesActivity extends AppCompatActivity implements View.OnClick
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.backvariables) {
-            Intent back = new Intent(VariablesActivity.this, CommentsActivity.class);
+            Intent back = new Intent(VariablesActivity.this, DataTypesActivity.class);
             startActivity(back);
         } else if (view.getId() == R.id.nextvariable) {
-            Intent next = new Intent(VariablesActivity.this, EchoPrintActivity.class);
+            Intent next = new Intent(VariablesActivity.this, OperatorsActivity.class);
             startActivity(next);
         }
     }

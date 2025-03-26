@@ -23,7 +23,6 @@ public class SwitchActivity  extends AppCompatActivity implements View.OnClickLi
         nextswitch.setOnClickListener(this);
     }
 
-
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.backswitch) {

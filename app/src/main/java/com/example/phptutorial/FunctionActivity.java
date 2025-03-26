@@ -33,6 +33,5 @@ public class FunctionActivity  extends AppCompatActivity implements View.OnClick
             Intent next = new Intent(FunctionActivity.this,ArrayActivity.class);
             startActivity(next);
         }
-
     }
 }

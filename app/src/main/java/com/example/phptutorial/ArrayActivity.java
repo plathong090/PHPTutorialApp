@@ -29,10 +29,7 @@ public class ArrayActivity  extends AppCompatActivity implements View.OnClickLis
         if (view.getId() == R.id.backarrays) {
             Intent back = new Intent(ArrayActivity.this, FunctionActivity.class);
             startActivity(back);
-        } else if (view.getId() == R.id.nextarrays) {
-            Intent next = new Intent(ArrayActivity.this,GlobalsActivity.class);
-            startActivity(next);
-        }
+        } 
 
     }
 }

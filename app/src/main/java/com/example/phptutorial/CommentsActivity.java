@@ -28,10 +28,10 @@ public class CommentsActivity extends AppCompatActivity implements View.OnClickL
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.backcomment) {
-            Intent back = new Intent(CommentsActivity.this, SyntaxActivity.class);
+            Intent back = new Intent(CommentsActivity.this, EchoPrintActivity.class);
             startActivity(back);
         } else if (view.getId() == R.id.nextcomment) {
-            Intent next = new Intent(CommentsActivity.this, VariablesActivity.class);
+            Intent next = new Intent(CommentsActivity.this, DataTypesActivity.class);
             startActivity(next);
         }
     }

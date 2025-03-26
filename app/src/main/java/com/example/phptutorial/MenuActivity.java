@@ -16,10 +16,9 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class MenuActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
     ListView listmenu;
     String[] itemsmenu = {
-            "สิ่งที่ควรรู้เกี่ยวกับ PHP" , "ไวยากรณ์" , "การเขียน Comment" , "การตั้งตัวแปร Variables" ,
-            "คำสั่ง echo และ print" , "ประเภทของข้อมูล" , "Strings" , "Numbers" , "การเปลี่ยนแปลงประเภทข้อมูล" ,
-            "ตัวแปรคณิตศาสตร์" , "ค่าคงที่" , "ค่าคงที่ที่กำหนดไว้ล่วงหน้า" , "ตัวดำเนินการ" , "if-else" ,
-            "Switch" , "Loop" , "ฟังก์ชัน" , "อาเรย์" , "ตัวแปรแบบ Globals" , "Regular Expressions",""};
+            "สิ่งที่ควรรู้เกี่ยวกับ PHP" , "ไวยากรณ์พื้นฐาน" , "คำสั่ง echo และ print" , "การเขียน Comment" , "ชนิดของข้อมูล" ,
+            "การตั้งตัวแปร Variables" , "ตัวดำเนินการ" , "การใช้ if-else" ,
+            "การใช้ Switch" , "การใช้ Loop" , "ฟังก์ชัน" , "อาเรย์"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,44 +66,28 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
 
         if (itemValue.equals("สิ่งที่ควรรู้เกี่ยวกับ PHP")) {
             intent = new Intent(MenuActivity.this, IntroActivity.class);
-        } else if (itemValue.equals("ไวยากรณ์")) {
+        } else if (itemValue.equals("ไวยากรณ์พื็นฐาน")) {
             intent = new Intent(MenuActivity.this, SyntaxActivity.class);
-        } else if (itemValue.equals("การเขียน Comment")) {
-            intent = new Intent(MenuActivity.this, CommentsActivity.class);
-        } else if (itemValue.equals("การตั้งตัวแปร Variables")) {
-            intent = new Intent(MenuActivity.this, VariablesActivity.class);
         } else if (itemValue.equals("คำสั่ง echo และ print")) {
             intent = new Intent(MenuActivity.this, EchoPrintActivity.class);
-        } else if (itemValue.equals("ประเภทของข้อมูล")) {
+        } else if (itemValue.equals("การเขียน Comment")) {
+            intent = new Intent(MenuActivity.this, CommentsActivity.class);
+        } else if (itemValue.equals("ชนิดของข้อมูล")) {
             intent = new Intent(MenuActivity.this, DataTypesActivity.class);
-        } else if (itemValue.equals("Strings")) {
-            intent = new Intent(MenuActivity.this, StringsActivity.class);
-        } else if (itemValue.equals("Numbers")) {
-            intent = new Intent(MenuActivity.this, NumbersActivity.class);
-        } else if (itemValue.equals("การเปลี่ยนแปลงประเภทข้อมูล")) {
-            intent = new Intent(MenuActivity.this, CastingActivity.class);
-        } else if (itemValue.equals("ตัวแปรคณิตศาสตร์")) {
-            intent = new Intent(MenuActivity.this, MathVariablesActivity.class);
-        } else if (itemValue.equals("ค่าคงที่")) {
-            intent = new Intent(MenuActivity.this, ConstantsActivity.class);
-        } else if (itemValue.equals("ค่าคงที่ที่กำหนดไว้ล่วงหน้า")) {
-            intent = new Intent(MenuActivity.this, PredefinedConstantsActivity.class);
+        } else if (itemValue.equals("การตั้งตัวแปร Variables")) {
+            intent = new Intent(MenuActivity.this, VariablesActivity.class);
         } else if (itemValue.equals("ตัวดำเนินการ")) {
             intent = new Intent(MenuActivity.this, OperatorsActivity.class);
-        } else if (itemValue.equals("if-else")) {
+        } else if (itemValue.equals("การใช้ if-else")) {
             intent = new Intent(MenuActivity.this, IfElseActivity.class);
-        } else if (itemValue.equals("Switch")) {
+        } else if (itemValue.equals("การใช้ Switch")) {
             intent = new Intent(MenuActivity.this, SwitchActivity.class);
-        } else if (itemValue.equals("Loop")) {
+        } else if (itemValue.equals("การใช้ Loop")) {
             intent = new Intent(MenuActivity.this, LoopActivity.class);
         } else if (itemValue.equals("ฟังก์ชัน")) {
             intent = new Intent(MenuActivity.this, FunctionActivity.class);
         } else if (itemValue.equals("อาเรย์")) {
             intent = new Intent(MenuActivity.this, ArrayActivity.class);
-        } else if (itemValue.equals("ตัวแปรแบบ Globals")) {
-            intent = new Intent(MenuActivity.this, GlobalsActivity.class);
-        } else if (itemValue.equals("Regular Expressions")) {
-            intent = new Intent(MenuActivity.this, RegexActivity.class);
         }
 
         if (intent != null) {

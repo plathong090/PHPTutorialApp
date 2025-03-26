@@ -51,7 +51,7 @@
                 android:fontFamily="@font/font"
                 android:gravity="center"
                 android:paddingTop="10dp"
-                android:text="ประเภทข้อมูล PHP"
+                android:text="ชนิดของข้อมูล"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -60,421 +60,124 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:paddingTop="10dp"
-                android:text="PHP รองรับประเภทข้อมูลต่อไปนี้:"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="  String, Integer, Float, Boolean, Array, Object, NULL, Resource"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="การรับประเภทข้อมูล"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="คุณสามารถรับประเภทข้อมูลของอ็อบเจ็กต์ใด ๆ ได้โดยใช้var_dump()ฟังก์ชั่นนี้"
+                android:text="      ชนิดข้อมูล (Data Types) หมายถึงลักษณะของข้อมูลที่ใช้ในโปรแกรม เช่น ตัวเลข, ข้อความ, อาเรย์, และ NULL โดย PHP เป็นภาษาที่ไม่ต้องการการกำหนดชนิดข้อมูลล่วงหน้า (Dynamically Typed Language) ซึ่งหมายความว่า ตัวแปรสามารถเก็บข้อมูลประเภทใดก็ได้โดยไม่ต้องประกาศชนิดข้อมูลก่อน PHP จะกำหนดชนิดข้อมูลให้เองจากค่าที่เก็บในตัวแปรนั้น ๆ"
                 android:textSize="16sp" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="101dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/t1" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 android:gravity="left"
                 android:paddingTop="10sp"
-                android:text="PHP String"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="สตริงเป็นลำดับอักขระ สามารถเป็นข้อความใดๆ ก็ได้ภายในเครื่องหมายคำพูด คุณสามารถใช้เครื่องหมายคำพูดเดี่ยวหรือคู่ก็ได้:"
+                android:text="ชนิดของข้อมูล"
+                android:textStyle="bold"
                 android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="ตัวอย่าง"
-                android:textSize="16sp"
-                android:textStyle="bold" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="101dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/t2" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="PHP Integer"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ประเภทข้อมูลจำนวนเต็มเป็นตัวเลขที่ไม่ใช่ทศนิยมระหว่าง -2,147,483,648 และ 2,147,483,647"
+                android:text="      1. Integer (int)"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="กฎสำหรับจำนวนเต็ม:"
+                android:text="              ใช้สำหรับเก็บจำนวนเต็ม เช่น ตัวเลขที่ไม่มีจุดทศนิยม ตัวอย่าง $year = 2025;"
                 android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text=" - จำนวนเต็มต้องมีอย่างน้อยหนึ่งหลัก"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text=" - จำนวนเต็มต้องไม่มีจุดทศนิยม"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text=" - จำนวนเต็มสามารถเป็นจำนวนบวกหรือจำนวนลบก็ได้"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text=" - จำนวนเต็มสามารถระบุได้ในรูปแบบ: ทศนิยม (ฐาน 10) เลขฐานสิบหก (ฐาน 16) เลขฐานแปด (ฐาน 8) หรือเลขฐานสอง (ฐาน 2)"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ในตัวอย่างต่อไปนี้$xเป็นจำนวนเต็ม var_dump() ฟังก์ชัน PHP จะส่งคืนชนิดข้อมูลและค่า:"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="ตัวอย่าง"
-                android:textSize="16sp"
-                android:textStyle="bold" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="101dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/t3" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="PHP Float"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ตัวเลขทศนิยมลอยตัว (floating point) คือตัวเลขที่มีจุดทศนิยมหรือตัวเลขในรูปแบบเลขชี้กำลัง"
+                android:text="      2. Float (double)"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ตัวอย่างต่อไปนี้$xคือ float var_dump() ฟังก์ชัน PHP จะส่งคืนชนิดข้อมูลและค่า:"
+                android:text="              ใช้สำหรับเก็บจำนวนที่มีจุดทศนิยม ตัวอย่าง $pi = 3.14;"
                 android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="ตัวอย่าง"
-                android:textSize="16sp"
-                android:textStyle="bold" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="101dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/t4" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="Boolean"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ค่าบูลีนแสดงสถานะที่เป็นไปได้สองสถานะ: TRUE หรือ FALSE"
+                android:text="      3. String"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="ตัวอย่าง"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                android:text="              ใช้สำหรับเก็บข้อความหรือชุดของตัวอักษร ตัวอย่าง $name = 'John';"
+                android:textSize="16sp" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="101dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/t5" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="บูลีนมักใช้ในการทดสอบแบบมีเงื่อนไข"
+                android:text="      4. Boolean"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="PHP Array"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="อาร์เรย์จะจัดเก็บค่าต่างๆ ไว้ในตัวแปรตัวเดียว"
+                android:text="              ใช้สำหรับเก็บค่า จริง (true) หรือ เท็จ (false) ตัวอย่าง $is_active = true;, $is_completed = false;"
                 android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ตัวอย่างต่อไปนี้$carsคืออาร์เรย์ var_dump() ฟังก์ชัน PHP จะส่งคืนชนิดข้อมูลและค่า:"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="ตัวอย่าง"
-                android:textSize="16sp"
-                android:textStyle="bold" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="101dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/t6" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="PHP Object"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="คลาสและอ็อบเจ็กต์เป็นสองลักษณะหลักของการเขียนโปรแกรมเชิงวัตถุ"
+                android:text="      5. Array"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="คลาสเป็นเทมเพลตสำหรับอ็อบเจ็กต์ และอ็อบเจ็กต์คืออินสแตนซ์ของคลาส"
+                android:text="              ใช้สำหรับเก็บข้อมูลหลายๆ ค่าในตัวแปรเดียว ตัวอย่าง $fruits = ['apple', 'banana', 'cherry'];"
                 android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="เมื่อสร้างวัตถุแต่ละรายการ วัตถุเหล่านั้นจะสืบทอดคุณสมบัติและลักษณะการทำงานทั้งหมดจากคลาส แต่วัตถุแต่ละรายการจะมีค่าคุณสมบัติที่แตกต่างกัน"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="สมมติว่าเรามีคลาสที่มีชื่อCarซึ่งสามารถมีคุณสมบัติ เช่น model, color เป็นต้น เราสามารถกำหนดตัวแปร เช่น$model, $color, และอื่นๆ เพื่อเก็บค่าของคุณสมบัติเหล่านี้ได้"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ถ้าคุณสร้าง__construct()ฟังก์ชัน PHP จะเรียกใช้ฟังก์ชันนี้โดยอัตโนมัติเมื่อคุณสร้างอ็อบเจ็กต์จากคลาส"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="ตัวอย่าง"
-                android:textSize="16sp"
-                android:textStyle="bold" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="101dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/t7" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="ค่า NULL ของ PHP"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="Null เป็นชนิดข้อมูลพิเศษที่สามารถมีได้เพียงค่าเดียวเท่านั้น: NULL"
+                android:text="      6. Associative Array"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="เคล็ดลับ:หากตัวแปรถูกสร้างขึ้นโดยไม่มีค่า ระบบจะกำหนดค่าเป็น NULL โดยอัตโนมัติ"
+                android:text='              อาเรย์ที่ใช้คีย์เป็นชื่อแทนการใช้ดัชนี ตัวอย่าง $person = ["name" => "John", "age" => 25];'
                 android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ตัวแปรสามารถล้างค่าได้โดยตั้งค่าเป็น NULL:"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="ตัวอย่าง"
-                android:textSize="16sp"
-                android:textStyle="bold" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="101dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/t8" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="การเปลี่ยนแปลงประเภทข้อมูล"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="ถ้าคุณกำหนดค่าจำนวนเต็มให้กับตัวแปร ประเภทนั้นจะเป็นจำนวนเต็มโดยอัตโนมัติ"
+                android:text="      7. Object"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="หากคุณกำหนดสตริงให้กับตัวแปรเดียวกัน ประเภทจะเปลี่ยนเป็นสตริง:"
+                android:text='              ใช้สำหรับเก็บข้อมูลในรูปแบบอ็อบเจ็กต์ โดยมีคุณสมบัติ (Properties) และฟังก์ชัน (Methods) ตัวอย่าง class Car { public $brand; public $model; }
+$car = new Car();'
                 android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="ตัวอย่าง"
-                android:textSize="16sp"
-                android:textStyle="bold" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="101dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/t9" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:paddingTop="10dp"
-                android:text="หากคุณต้องการเปลี่ยนชนิดข้อมูลของตัวแปรที่มีอยู่ แต่ไม่ใช่ด้วยการเปลี่ยนค่า คุณสามารถใช้การแปลงได้
-การคัดเลือกช่วยให้คุณสามารถเปลี่ยนชนิดข้อมูลในตัวแปรได้:"
+                android:text="      8. NULL"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                android:gravity="left"
-                android:paddingTop="10sp"
-                android:text="ตัวอย่าง"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="101dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/t10" />
-        </LinearLayout>
+                android:text='              ใช้สำหรับเก็บค่า "ไม่มีค่า" หรือ "ค่าว่าง" ตัวอย่าง $value = NULL;'
+                android:textSize="16sp" />
+    </LinearLayout>
     </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

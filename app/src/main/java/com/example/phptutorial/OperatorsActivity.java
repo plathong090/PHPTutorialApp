@@ -27,7 +27,7 @@ public class OperatorsActivity  extends AppCompatActivity implements View.OnClic
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.backoperator) {
-            Intent back = new Intent(OperatorsActivity.this, PredefinedConstantsActivity.class);
+            Intent back = new Intent(OperatorsActivity.this, VariablesActivity.class);
             startActivity(back);
         } else if (view.getId() == R.id.nextoperator) {
             Intent next = new Intent(OperatorsActivity.this, IfElseActivity.class);
