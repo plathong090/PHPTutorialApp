@@ -24,11 +24,16 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        String UserID = getIntent().getStringExtra("UserID");
+        String Username = getIntent().getStringExtra("Username");
+
         Button startButton = findViewById(R.id.startBtn);
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+                intent.putExtra("UserID" , UserID);
+                intent.putExtra("Username" , Username);
                 startActivity(intent);
             }
         });
@@ -41,18 +46,26 @@ public class MainActivity extends AppCompatActivity{
 
                 if (item.getItemId() == R.id.home) {
                     intent = new Intent(MainActivity.this, MainActivity.class);
+                    intent.putExtra("UserID" , UserID);
+                    intent.putExtra("Username" , Username);
                     startActivity(intent);
                     return true;
                 } else if (item.getItemId() == R.id.lessons) {
                     intent = new Intent(MainActivity.this, MenuActivity.class);
+                    intent.putExtra("UserID" , UserID);
+                    intent.putExtra("Username" , Username);
                     startActivity(intent);
                     return true;
                 } else if (item.getItemId() == R.id.exercise) {
                     intent = new Intent(MainActivity.this, QuizActivity.class);
+                    intent.putExtra("UserID" , UserID);
+                    intent.putExtra("Username" , Username);
                     startActivity(intent);
                     return true;
                 } else if (item.getItemId() == R.id.profile) {
                     intent = new Intent(MainActivity.this, ProfileActivity.class);
+                    intent.putExtra("UserID" , UserID);
+                    intent.putExtra("Username" , Username);
                     startActivity(intent);
                     return true;
                 } else {

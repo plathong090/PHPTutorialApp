@@ -41,11 +41,10 @@ public class LoginProfileActivity extends AppCompatActivity {
                 Toast.makeText(this, "กรุุณากรอกข้อมูล", Toast.LENGTH_SHORT).show();
             } else {
                 Cursor res = DB.getuser(username,password);
-                if (res != null) {
+                if (res != null && res.getCount() > 0) {
                     res.moveToFirst();
                     Intent i = new Intent(LoginProfileActivity.this, MainActivity.class);
                     i.putExtra("UserID" , res.getString(0));
-                    i.putExtra("check" , true);
                     i.putExtra("Username" , res.getString(1));
                     startActivity(i);
                     finish();

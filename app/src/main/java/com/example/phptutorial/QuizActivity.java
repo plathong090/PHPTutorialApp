@@ -25,6 +25,9 @@ public class QuizActivity extends AppCompatActivity implements AdapterView.OnIte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
+        String UserID = getIntent().getStringExtra("UserID");
+        String Username = getIntent().getStringExtra("Username");
+
         listquiz = findViewById(R.id.listquiz);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, itemsquiz);
         listquiz.setAdapter(adapter);
@@ -39,18 +42,26 @@ public class QuizActivity extends AppCompatActivity implements AdapterView.OnIte
 
                 if (item.getItemId() == R.id.home) {
                     intent = new Intent(QuizActivity.this, MainActivity.class);
+                    intent.putExtra("UserID" , UserID);
+                    intent.putExtra("Username" , Username);
                     startActivity(intent);
                     return true;
                 } else if (item.getItemId() == R.id.lessons) {
                     intent = new Intent(QuizActivity.this, MenuActivity.class);
+                    intent.putExtra("UserID" , UserID);
+                    intent.putExtra("Username" , Username);
                     startActivity(intent);
                     return true;
                 } else if (item.getItemId() == R.id.exercise) {
                     intent = new Intent(QuizActivity.this, QuizActivity.class);
+                    intent.putExtra("UserID" , UserID);
+                    intent.putExtra("Username" , Username);
                     startActivity(intent);
                     return true;
                 } else if (item.getItemId() == R.id.profile) {
                     intent = new Intent(QuizActivity.this, ProfileActivity.class);
+                    intent.putExtra("UserID" , UserID);
+                    intent.putExtra("Username" , Username);
                     startActivity(intent);
                     return true;
                 } else {
@@ -64,6 +75,9 @@ public class QuizActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         String item = (String) listquiz.getItemAtPosition(i);
         Intent intent = null;
+
+        String UserID = getIntent().getStringExtra("UserID");
+        String Username = getIntent().getStringExtra("Username");
 
         if (item.equals("แบบทดสอบก่อนเรียน")) {
             intent = new Intent(QuizActivity.this, Quiz1Activity.class);
@@ -90,6 +104,9 @@ public class QuizActivity extends AppCompatActivity implements AdapterView.OnIte
         } else if (item.equals("แบบทดสอบ : อาเรย์")) {
             intent = new Intent(QuizActivity.this, Quiz12Activity.class);
         }
+
+        intent.putExtra("UserID" , UserID);
+        intent.putExtra("Username" , Username);
 
         if (intent != null) {
             startActivity(intent);

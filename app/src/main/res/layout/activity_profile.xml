@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="152dp"
         android:fontFamily="@font/font"
-        android:text="โปรไฟล์"
+        android:text="Profile"
         android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,10 +41,10 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"
-        android:backgroundTint="@android:color/holo_green_light"
+        android:backgroundTint="@color/error"
         android:fontFamily="@font/font"
-        android:text="เข้าสู่ระบบ"
-        android:textColor="@android:color/black"
+        android:text="ออกจากระบบ"
+        android:textColor="@color/background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,12 +56,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="4dp"
-        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_menu" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

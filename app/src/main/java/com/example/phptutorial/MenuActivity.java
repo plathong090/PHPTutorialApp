@@ -23,6 +23,9 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
+        String UserID = getIntent().getStringExtra("UserID");
+        String Username = getIntent().getStringExtra("Username");
+
         listmenu = findViewById(R.id.listmenu);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, itemsmenu);
         listmenu.setAdapter(adapter);
@@ -37,18 +40,26 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
 
                 if (item.getItemId() == R.id.home) {
                     intent = new Intent(MenuActivity.this, MainActivity.class);
+                    intent.putExtra("UserID" , UserID);
+                    intent.putExtra("Username" , Username);
                     startActivity(intent);
                     return true;
                 } else if (item.getItemId() == R.id.lessons) {
                     intent = new Intent(MenuActivity.this, MenuActivity.class);
+                    intent.putExtra("UserID" , UserID);
+                    intent.putExtra("Username" , Username);
                     startActivity(intent);
                     return true;
                 } else if (item.getItemId() == R.id.exercise) {
                     intent = new Intent(MenuActivity.this, QuizActivity.class);
+                    intent.putExtra("UserID" , UserID);
+                    intent.putExtra("Username" , Username);
                     startActivity(intent);
                     return true;
                 } else if (item.getItemId() == R.id.profile) {
                     intent = new Intent(MenuActivity.this, ProfileActivity.class);
+                    intent.putExtra("UserID" , UserID);
+                    intent.putExtra("Username" , Username);
                     startActivity(intent);
                     return true;
                 } else {
@@ -63,30 +74,57 @@ public class MenuActivity extends AppCompatActivity implements AdapterView.OnIte
         String itemValue = (String) listmenu.getItemAtPosition(position);
         Intent intent = null;
 
+        String UserID = getIntent().getStringExtra("UserID");
+        String Username = getIntent().getStringExtra("Username");
+
         if (itemValue.equals("สิ่งที่ควรรู้เกี่ยวกับ PHP")) {
             intent = new Intent(MenuActivity.this, IntroActivity.class);
+            intent.putExtra("UserID" , UserID);
+            intent.putExtra("Username" , Username);
         } else if (itemValue.equals("ไวยากรณ์พื็นฐาน")) {
             intent = new Intent(MenuActivity.this, SyntaxActivity.class);
+            intent.putExtra("UserID" , UserID);
+            intent.putExtra("Username" , Username);
         } else if (itemValue.equals("คำสั่ง echo และ print")) {
             intent = new Intent(MenuActivity.this, EchoPrintActivity.class);
+            intent.putExtra("UserID" , UserID);
+            intent.putExtra("Username" , Username);
         } else if (itemValue.equals("การเขียน Comment")) {
             intent = new Intent(MenuActivity.this, CommentsActivity.class);
+            intent.putExtra("UserID" , UserID);
+            intent.putExtra("Username" , Username);
         } else if (itemValue.equals("ชนิดของข้อมูล")) {
             intent = new Intent(MenuActivity.this, DataTypesActivity.class);
+            intent.putExtra("UserID" , UserID);
+            intent.putExtra("Username" , Username);
         } else if (itemValue.equals("การตั้งตัวแปร Variables")) {
             intent = new Intent(MenuActivity.this, VariablesActivity.class);
+            intent.putExtra("UserID" , UserID);
+            intent.putExtra("Username" , Username);
         } else if (itemValue.equals("ตัวดำเนินการ")) {
             intent = new Intent(MenuActivity.this, OperatorsActivity.class);
+            intent.putExtra("UserID" , UserID);
+            intent.putExtra("Username" , Username);
         } else if (itemValue.equals("การใช้ if-else")) {
             intent = new Intent(MenuActivity.this, IfElseActivity.class);
+            intent.putExtra("UserID" , UserID);
+            intent.putExtra("Username" , Username);
         } else if (itemValue.equals("การใช้ Switch")) {
             intent = new Intent(MenuActivity.this, SwitchActivity.class);
+            intent.putExtra("UserID" , UserID);
+            intent.putExtra("Username" , Username);
         } else if (itemValue.equals("การใช้ Loop")) {
             intent = new Intent(MenuActivity.this, LoopActivity.class);
+            intent.putExtra("UserID" , UserID);
+            intent.putExtra("Username" , Username);
         } else if (itemValue.equals("ฟังก์ชัน")) {
             intent = new Intent(MenuActivity.this, FunctionActivity.class);
+            intent.putExtra("UserID" , UserID);
+            intent.putExtra("Username" , Username);
         } else if (itemValue.equals("อาเรย์")) {
             intent = new Intent(MenuActivity.this, ArrayActivity.class);
+            intent.putExtra("UserID" , UserID);
+            intent.putExtra("Username" , Username);
         }
 
         if (intent != null) {
