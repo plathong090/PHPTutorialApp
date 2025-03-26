@@ -37,13 +37,6 @@
                     android:layout_height="48dp"
                     android:layout_weight="1" />
 
-                <Button
-                    android:id="@+id/nextarrays"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/font"
-                    android:text="ต่อไป" />
-
             </LinearLayout>
             <TextView
                 android:layout_width="match_parent"
@@ -1286,5 +1279,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_menu" />
+
 </RelativeLayout>

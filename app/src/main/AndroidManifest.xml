@@ -52,9 +52,6 @@
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".AboutProfileActivity"
-            android:exported="false" />
-        <activity
             android:name=".LoginProfileActivity"
             android:exported="false" />
         <activity
@@ -70,7 +67,7 @@
             android:name=".SyntaxActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".IntroActivity"
@@ -100,11 +97,10 @@
             android:name=".ArrayActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ProfileActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

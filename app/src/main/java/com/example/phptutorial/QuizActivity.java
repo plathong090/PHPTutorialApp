@@ -2,6 +2,7 @@ package com.example.phptutorial;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -9,6 +10,8 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class QuizActivity extends AppCompatActivity implements AdapterView.OnItemClickListener  {
     ListView listquiz;
@@ -26,6 +29,35 @@ public class QuizActivity extends AppCompatActivity implements AdapterView.OnIte
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, itemsquiz);
         listquiz.setAdapter(adapter);
         listquiz.setOnItemClickListener(this);
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.exercise);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem item) {
+                Intent intent = null;
+
+                if (item.getItemId() == R.id.home) {
+                    intent = new Intent(QuizActivity.this, MainActivity.class);
+                    startActivity(intent);
+                    return true;
+                } else if (item.getItemId() == R.id.lessons) {
+                    intent = new Intent(QuizActivity.this, MenuActivity.class);
+                    startActivity(intent);
+                    return true;
+                } else if (item.getItemId() == R.id.exercise) {
+                    intent = new Intent(QuizActivity.this, QuizActivity.class);
+                    startActivity(intent);
+                    return true;
+                } else if (item.getItemId() == R.id.profile) {
+                    intent = new Intent(QuizActivity.this, ProfileActivity.class);
+                    startActivity(intent);
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        });
     }
 
     @Override

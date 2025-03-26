@@ -2,6 +2,7 @@ package com.example.phptutorial;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -9,6 +10,8 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Quiz3Activity extends AppCompatActivity {
     RadioGroup radioGroup1, radioGroup2, radioGroup3;
@@ -49,6 +52,35 @@ public class Quiz3Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 checkAnswers();
+            }
+        });
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.exercise);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem item) {
+                Intent intent = null;
+
+                if (item.getItemId() == R.id.home) {
+                    intent = new Intent(Quiz3Activity.this, MainActivity.class);
+                    startActivity(intent);
+                    return true;
+                } else if (item.getItemId() == R.id.lessons) {
+                    intent = new Intent(Quiz3Activity.this, MenuActivity.class);
+                    startActivity(intent);
+                    return true;
+                } else if (item.getItemId() == R.id.exercise) {
+                    intent = new Intent(Quiz3Activity.this, QuizActivity.class);
+                    startActivity(intent);
+                    return true;
+                } else if (item.getItemId() == R.id.profile) {
+                    intent = new Intent(Quiz3Activity.this, ProfileActivity.class);
+                    startActivity(intent);
+                    return true;
+                } else {
+                    return false;
+                }
             }
         });
     }

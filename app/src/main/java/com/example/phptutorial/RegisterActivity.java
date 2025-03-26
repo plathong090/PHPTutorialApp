@@ -17,6 +17,7 @@ public class RegisterActivity extends AppCompatActivity {
     EditText usernameEditText, passwordEditText, confirmPasswordEditText;
     Button registerButton;
     TextView loginLink;
+    Database DB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,8 @@ public class RegisterActivity extends AppCompatActivity {
         registerButton = findViewById(R.id.register_button);
         loginLink = findViewById(R.id.login_link);
 
+        DB = new Database(this);
+
         registerButton.setOnClickListener(v -> {
             String username = usernameEditText.getText().toString();
             String password = passwordEditText.getText().toString();
@@ -40,10 +43,15 @@ public class RegisterActivity extends AppCompatActivity {
             } else if (!password.equals(confirmPassword)) {
                 Toast.makeText(this, "รหัสผ่านไม่ตรงกัน", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(this, "สมัครสมาชิกสำเร็จ", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(RegisterActivity.this, LoginProfileActivity.class);
-                startActivity(intent);
-                finish();
+                boolean res = DB.insertuser(username,password);
+                if (res) {
+                    Toast.makeText(this, "สมัครสมาชิกสำเร็จ", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(RegisterActivity.this, LoginProfileActivity.class);
+                    startActivity(intent);
+                    finish();
+                } else {
+                    Toast.makeText(this, "สมัครสมาชิกไม่สำเร็จ", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

@@ -22,6 +22,35 @@ public class DataTypesActivity extends AppCompatActivity implements View.OnClick
         nextdatatype = findViewById(R.id.nextdatatype);
         backdatatype.setOnClickListener(this);
         nextdatatype.setOnClickListener(this);
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.lessons);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem item) {
+                Intent intent = null;
+
+                if (item.getItemId() == R.id.home) {
+                    intent = new Intent(DataTypesActivity.this, MainActivity.class);
+                    startActivity(intent);
+                    return true;
+                } else if (item.getItemId() == R.id.lessons) {
+                    intent = new Intent(DataTypesActivity.this, MenuActivity.class);
+                    startActivity(intent);
+                    return true;
+                } else if (item.getItemId() == R.id.exercise) {
+                    intent = new Intent(DataTypesActivity.this, QuizActivity.class);
+                    startActivity(intent);
+                    return true;
+                } else if (item.getItemId() == R.id.profile) {
+                    intent = new Intent(DataTypesActivity.this, ProfileActivity.class);
+                    startActivity(intent);
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        });
     }
 
     @Override
